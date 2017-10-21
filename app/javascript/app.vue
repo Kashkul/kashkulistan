@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <p class="title">{{ message }}</p>
+    <Test></Test>
   </div>
 </template>
 
 <script>
+import Test from './components/test.vue'
 export default {
+  components: { Test },
   data: function () {
     return {
       message: "Hello Vue!"
@@ -17,7 +20,7 @@ export default {
 <style lang="sass" scoped>
   @import '~bulma'
 
-  p
+  div
     font-family: $family-primary
 
 

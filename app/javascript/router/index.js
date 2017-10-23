@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue/dist/vue.esm'
 import VueRouter from 'vue-router'
 import Test from '../components/Test.vue'
 

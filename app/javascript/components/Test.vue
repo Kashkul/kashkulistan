@@ -1,5 +1,8 @@
 <template>
-	<h1 class="title">This is a test</h1>
+	<div>
+		<h1 class="title">This is a test</h1>
+		<router-link to='/testing'> TEst </router-link>
+	</div>
 </template>
 
 <script>

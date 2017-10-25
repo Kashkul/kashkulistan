@@ -1,10 +1,10 @@
 /* eslint no-console: 0 */
 
-//This file is the entry point for the front-end Vue app. 
+//This file is the entry point for the front-end Vue app. The rest of the frontend app code is stored in app/javascript/kashkulistan_client. 
 
 import Vue from 'vue/dist/vue.esm'
 import VueRouter from 'vue-router';
-import App from '../app.vue'
+import App from '../kashkulistan_client/app.vue'
 import router from '../router/index.js'
 
 Vue.use(VueRouter)

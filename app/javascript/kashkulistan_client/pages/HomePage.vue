@@ -7,14 +7,16 @@
     		</a>
   		</div>
 		</nav>
-		<section class="hero is-fullheight is-light">
-			<p>STuff</p>
-			<p>STuff</p>
-			<p>STuff</p>
-			<p>STuff</p>
-			<p>STuff</p>
-			<p>STuff</p>
-		</section>
+		<parallax :fixed="true">
+			<section class="hero is-fullheight is-light">
+				<p>STuff</p>
+				<p>STuff</p>
+				<p>STuff</p>
+				<p>STuff</p>
+				<p>STuff</p>
+				<p>STuff</p>
+			</section>
+		</parallax>
 		<section class="hero is-fullheight is-primary">
 			<p class="title">Home is working!</p>
 		</section>
@@ -22,11 +24,11 @@
 </template>
 
 <script>
+import Parallax from 'vue-parallaxy'
 
 export default {
-
   name: 'HomePage',
-
+  components: {Parallax},
   data () {
     return {
 

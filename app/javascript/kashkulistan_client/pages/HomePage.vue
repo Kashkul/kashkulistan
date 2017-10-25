@@ -8,7 +8,12 @@
   		</div>
 		</nav>
 		<section class="hero is-fullheight is-light">
-			
+			<p>STuff</p>
+			<p>STuff</p>
+			<p>STuff</p>
+			<p>STuff</p>
+			<p>STuff</p>
+			<p>STuff</p>
 		</section>
 		<section class="hero is-fullheight is-primary">
 			<p class="title">Home is working!</p>

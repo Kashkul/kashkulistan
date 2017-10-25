@@ -5,7 +5,7 @@
 import Vue from 'vue/dist/vue.esm'
 import VueRouter from 'vue-router';
 import App from '../kashkulistan_client/app.vue'
-import router from '../router/index.js'
+import router from '../kashkulistan_client/router/index.js'
 
 Vue.use(VueRouter)
 

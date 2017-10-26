@@ -4,9 +4,7 @@
 		<parallax :fixed="true">
 			<splash-screen></splash-screen>
 		</parallax>
-		<section class="hero is-fullheight is-white">
-			<p class="title">Home is working!</p>
-		</section>
+		<about-section></about-section>
 	</div>
 </template>
 
@@ -14,10 +12,11 @@
 import Parallax from 'vue-parallaxy'
 import NavBar from '../components/NavBar.vue'
 import SplashScreen from '../components/SplashScreen.vue'
+import AboutSection from '../components/AboutSection.vue'
 
 export default {
   name: 'HomePage',
-  components: {Parallax, NavBar, SplashScreen},
+  components: {Parallax, NavBar, SplashScreen, AboutSection},
   data () {
     return {
 

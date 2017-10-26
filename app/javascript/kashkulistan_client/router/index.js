@@ -1,6 +1,6 @@
 import Vue from 'vue/dist/vue.esm'
 import VueRouter from 'vue-router'
-import Test from '../components/Test.vue'
+import NavBar from '../components/NavBar.vue'
 import HomePage from '../pages/HomePage.vue'
 
 Vue.use(VueRouter)
@@ -15,7 +15,7 @@ export default new VueRouter({
 		{
 			path: '/testing',
 			name: 'testroute',
-			component: Test
+			component: NavBar
 		}
 	]
 })

@@ -1,14 +1,19 @@
 <template>
 	<div>
-		<h1 class="title">This is a test</h1>
-		<router-link to='/testing'> TEst </router-link>
+		<nav class="navbar nav-is-fixed is-dark">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="https://bulma.io">
+					<img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+				</a>
+			</div>
+		</nav>
 	</div>
 </template>
 
 <script>
 export default {
 
-  name: 'Test',
+  name: 'NavBar',
 
   data () {
     return {

@@ -1,12 +1,6 @@
 <template>
 	<div>
-		<nav class="navbar nav-is-fixed is-dark">
-			<div class="navbar-brand">
-				<a class="navbar-item" href="https://bulma.io">
-					<img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-				</a>
-			</div>
-		</nav>
+		<nav-bar class="nav-is-fixed"> </nav-bar>
 		<parallax :fixed="true">
 			<section class="hero is-fullheight is-dark is-bold">
 				<div class="hero-body">
@@ -21,7 +15,7 @@
 				</div>
 			</section>
 		</parallax>
-		<section class="hero is-fullheight is-primary">
+		<section class="hero is-fullheight is-white">
 			<p class="title">Home is working!</p>
 		</section>
 	</div>
@@ -29,10 +23,11 @@
 
 <script>
 import Parallax from 'vue-parallaxy'
+import NavBar from '../components/NavBar.vue'
 
 export default {
   name: 'HomePage',
-  components: {Parallax},
+  components: {Parallax, NavBar},
   data () {
     return {
 

@@ -5,8 +5,8 @@
 				<h1 class="title is-1">
 					Kashkul:
 				</h1>
-				<h2 class="title">
-					1. First definition goes here, this will eventually animate to include the other definitions. Bla bla bla. Also more stuff.
+				<h2 class="title is-4">
+					3. a research, translation, and preservation collaborative based in Sulaimani, Iraq. Iraqi, Kurdish, and American scholars come together to pursue projects of their own design. All members of the collaborative hope that this is our work, in the digital world: to create, curate, and preserve culture in the northern regions of Iraq.
 				</h2>
 			</div>
 		</div>

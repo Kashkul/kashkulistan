@@ -1,6 +1,12 @@
 <template>
 	<section class="hero is-fullheight is-white">
-		<p class="title">Home is working!</p>
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="subtitle is-3">
+					<strong>This is our kashkul.</strong>
+				</h1>
+			</div>
+		</div>
 	</section>
 </template>
 

@@ -9,6 +9,7 @@
 				<div class="container has-text-centered">
 					<h1 class="subtitle is-3">
 						<strong>This is our kashkul.</strong>
+						<div id="instafeed"></div>
 					</h1>
 				</div>
 			</div>
@@ -22,6 +23,16 @@ import Parallax from 'vue-parallaxy'
 import NavBar from '../components/NavBar.vue'
 import SplashScreen from '../components/SplashScreen.vue'
 import AboutSection from '../components/AboutSection.vue'
+import * as Instafeed from 'instafeed.js'
+
+ var feed = new Instafeed({
+        get: 'user',
+        userId: 953380486,
+        clientId: process.env.INSTAGRAM_CLIENT_ID,
+        accessToken: process.env.ROGER_INSTAGRAM_ACCESS_TOKEN
+    });
+    feed.run();
+    console.log(feed)
 
 export default {
   name: 'HomePage',

@@ -9,10 +9,7 @@
 				<div class="container has-text-centered">
 					<h1 class="subtitle is-3">
 						<strong>This is our kashkul.</strong>
-						
-						<carousel>
-							<div id="instafeed"></div>
-						</carousel>
+						<instagram-carousel></instagram-carousel>
 					</h1>
 				</div>
 			</div>
@@ -26,27 +23,16 @@ import Parallax from 'vue-parallaxy'
 import NavBar from '../components/NavBar.vue'
 import SplashScreen from '../components/SplashScreen.vue'
 import AboutSection from '../components/AboutSection.vue'
-import Instafeed from 'instafeed.js'
-import {Carousel, Slide} from 'vue-carousel'
+import InstagramCarousel from '../components/InstagramCarousel.vue'
+
 
 export default {
   name: 'HomePage',
-  components: {Parallax, NavBar, SplashScreen, AboutSection, Carousel, Slide},
+  components: {Parallax, NavBar, SplashScreen, AboutSection, InstagramCarousel},
   data () {
     return {
 
     }
-  },
-  beforeCreate() {
-  	 var feed = new Instafeed({
-        get: 'user',
-        userId: 953380486,
-        clientId: process.env.INSTAGRAM_CLIENT_ID,
-        accessToken: process.env.ROGER_INSTAGRAM_ACCESS_TOKEN,
-        template: '<slide><a href="{{link}}"><img src="{{image}}" /></a></slide>'
-    });
-    console.log(feed._buildUrl)
-  	 feed.run()
   }
 }
 

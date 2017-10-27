@@ -18,21 +18,15 @@ export default {
 
   data () {
     return {
-
+    	photos: []
     }
   },
   beforeCreate() {
+  	
   	let accessToken = process.env.ROGER_INSTAGRAM_ACCESS_TOKEN
   	let userId = process.env.ROGER_INSTAGRAM_ACCT_ID
   	let instagramApiUrl = `http://api.instagram.com/v1/users/${userId}/media/recent/?access_token=${accessToken}`
- //  	axios.get(instagramApiUrl, {
- //  		headers: {
-	//   	'Access-Control-Allow-Origin': '*',
-	// },
- //  	})
- //  	.then(response => {
- //  		console.log(response.data)
- //  	})
+
  		jsonp(instagramApiUrl, null, function (err, data) {
  			if (err) {
  				console.log(err.message)

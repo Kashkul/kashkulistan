@@ -1,10 +1,12 @@
 <template>
-	<carousel>
-		<slide>Stuff</slide>
-		<slide>Stuff</slide>
-		<slide>Stuff</slide>
-		<slide>Stuff</slide>
-	</carousel>
+  <div class="carousel-container">
+  	<carousel>
+  		<slide><img src="../images/instastatic/1.png"></slide>
+  		<slide><img src="../images/instastatic/2.png"></slide>
+  		<slide><img src="../images/instastatic/3.png"></slide>
+  		<slide><img src="../images/instastatic/4.png"></slide>
+  	</carousel>
+  </div>
 </template>
 
 <script>
@@ -23,5 +25,9 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="sass" scoped>
+@import '~bulma'
+
+.carousel-container
+  padding: 8%
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<nav-bar></nav-bar>
+		<nav-bar class="nav-is-fixed"></nav-bar>
 		<h1>You have reached people page</h1>
 	</div>
 </template>
@@ -23,4 +23,10 @@ export default {
 
 <style lang="sass" scoped>
 @import '~bulma'
+
+.nav-is-fixed
+  top: 0
+  z-index: 100
+  position: fixed
+  width: 100%
 </style>

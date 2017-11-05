@@ -2,9 +2,18 @@
 	<section> 
 		<nav class="navbar is-dark">
 			<div class="navbar-brand">
-				<a class="navbar-item" href="https://bulma.io">
-					<img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-				</a>
+				<h1 class="navbar-item">Kashkul</h1>
+			</div>
+			<div>
+				
+			</div>
+			<div class="navbar-menu">
+				<div class="navbar-start">
+					<div class="navbar-item">
+						<p>Our people</p>
+					</div>
+					
+				</div>
 			</div>
 		</nav>
 	</section>

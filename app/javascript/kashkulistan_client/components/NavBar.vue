@@ -2,7 +2,7 @@
 	<section> 
 		<nav class="navbar is-dark">
 			<div class="navbar-brand">
-				<h1 class="navbar-item">Kashkul</h1>
+				<router-link to="/" class="navbar-item">Kashkul</router-link>
 			</div>
 			<div>
 				
@@ -10,7 +10,7 @@
 			<div class="navbar-menu">
 				<div class="navbar-start">
 					<div class="navbar-item">
-						<p>Our people</p>
+						<router-link to="People">Our people</router-link>
 					</div>
 					
 				</div>

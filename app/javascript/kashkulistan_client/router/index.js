@@ -9,12 +9,12 @@ export default new VueRouter({
 	routes: [
 		{
 			path: '/',
-			name: "Home",
+			name: "home",
 			component: HomePage
 		},
 		{
-			path: '/testing',
-			name: 'testroute',
+			path: '/people',
+			name: 'people',
 			component: NavBar
 		}
 	]

@@ -1,13 +1,11 @@
 <template>
 	<div>
-    <section>
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <person-tile class="tile is-child is-9"></person-tile>
-        <person-tile class="tile is-child is-9"></person-tile>
+        <person-tile class="tile is-child is-2"></person-tile>
       </div>
     </div>
-    </section>
 	</div>
 </template>
 
@@ -31,4 +29,7 @@ export default {
 <style lang="sass" scoped>
 @import '~bulma'
 
+.is-parent
+  flex-wrap: wrap
+  
 </style>

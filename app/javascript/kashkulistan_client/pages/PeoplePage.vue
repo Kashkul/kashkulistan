@@ -1,12 +1,15 @@
 <template>
-	<div>
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <person-tile class="tile is-child is-9"></person-tile>
-        <person-tile class="tile is-child is-2"></person-tile>
+  <section class="hero is-fullheight is-white">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <person-tile></person-tile>
+          </div>
+        </div>
       </div>
     </div>
-	</div>
+  </section>
 </template>
 
 <script>
@@ -29,7 +32,4 @@ export default {
 <style lang="sass" scoped>
 @import '~bulma'
 
-.is-parent
-  flex-wrap: wrap
-  
 </style>

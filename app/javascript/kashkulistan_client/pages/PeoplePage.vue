@@ -14,12 +14,11 @@
 
 <script>
 
-import NavBar from '../components/NavBar.vue'
 import PersonTile from '../components/PersonTile.vue'
 export default {
 
   name: 'PeoplePage',
-  components: { NavBar,PersonTile },
+  components: { PersonTile },
   data () {
     return {
 

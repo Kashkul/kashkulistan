@@ -1,16 +1,24 @@
 <template>
 	<div>
-		<nav-bar class="nav-is-fixed"></nav-bar>
+    <section>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <person-tile class="tile is-child is-9"></person-tile>
+        <person-tile class="tile is-child is-9"></person-tile>
+      </div>
+    </div>
+    </section>
 	</div>
 </template>
 
 <script>
 
 import NavBar from '../components/NavBar.vue'
+import PersonTile from '../components/PersonTile.vue'
 export default {
 
   name: 'PeoplePage',
-  components: { NavBar },
+  components: { NavBar,PersonTile },
   data () {
     return {
 
@@ -22,11 +30,5 @@ export default {
 
 <style lang="sass" scoped>
 @import '~bulma'
-
-.nav-is-fixed
-  top: 0
-  z-index: 100
-  position: fixed
-  width: 100%
 
 </style>

@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<nav-bar class="nav-is-fixed"> </nav-bar>
 		<parallax :fixed="true">
 			<splash-screen></splash-screen>
 		</parallax>
@@ -40,11 +39,5 @@ export default {
 
 <style lang="sass" scoped>
 @import '~bulma'
-
-.nav-is-fixed
-  top: 0
-  z-index: 100
-  position: fixed
-  width: 100%
 
 </style>

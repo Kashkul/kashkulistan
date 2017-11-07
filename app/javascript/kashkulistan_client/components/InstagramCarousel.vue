@@ -1,6 +1,6 @@
 <template>
   <div class="carousel-container">
-  	<carousel  :autoplay="true" perPage="2">
+  	<carousel  :autoplay="true" :perPage="2">
   		<slide class="slide"><img src="../images/instastatic/1.png"></slide>
   		<slide class="slide"><img src="../images/instastatic/2.png"></slide>
   		<slide class="slide"><img src="../images/instastatic/3.png"></slide>

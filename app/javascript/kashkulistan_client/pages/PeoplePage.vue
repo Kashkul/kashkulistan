@@ -1,7 +1,6 @@
 <template>
 	<div>
 		<nav-bar class="nav-is-fixed"></nav-bar>
-		<h1>You have reached people page</h1>
 	</div>
 </template>
 
@@ -29,4 +28,5 @@ export default {
   z-index: 100
   position: fixed
   width: 100%
+
 </style>

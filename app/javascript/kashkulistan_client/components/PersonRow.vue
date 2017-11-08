@@ -1,18 +1,16 @@
 <template>
 	<div class="tile is-ancestor">
-		<div class="tile is-parent">
-			<div class="tile is-child">
-				<p>{{rowData}}</p>
-			</div>
-		</div>
+		<person-tile></person-tile>
   </div>        
 </template>
 
 <script>
+import PersonTile from './PersonTile.vue'
 export default {
 
   name: 'PersonRow',
   props: ['rowData'],
+  components: {PersonTile},
   data () {
     return {
 

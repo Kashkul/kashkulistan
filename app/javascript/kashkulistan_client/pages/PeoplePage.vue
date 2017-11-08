@@ -2,20 +2,7 @@
   <section class="hero is-fullheight is-white">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <div class="tile is-ancestor">
-
-            <person-tile></person-tile>
-            <person-tile></person-tile>
-            <person-tile></person-tile>
-
-        </div>        
-        <div class="tile is-ancestor">
-
-            <person-tile></person-tile>
-            <person-tile></person-tile>
-            <person-tile></person-tile>
-
-        </div>
+        {{peopleData}}
       </div>
     </div>
   </section>
@@ -24,21 +11,21 @@
 <script>
 
 import axios from 'axios'
-import PersonTile from '../components/PersonTile.vue'
+// import PersonRow from '../components/PersonRow.vue'
 export default {
 
   name: 'PeoplePage',
-  components: { PersonTile },
+  components: {  },
   data () {
     return {
-
+      //peopleData will be set to the data in the server response - see created function below.
+      peopleData: []
     }
   },
   created: function() {
     axios.get(`api/v1/people`)
     .then(response => {
-      // JSON responses are automatically parsed.
-      console.log(response.data)
+      this.peopleData = response.data
     })
     .catch(e => {
       this.errors.push(e)

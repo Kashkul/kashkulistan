@@ -15,7 +15,7 @@
 					  <i class="fa fa-instagram" @click="openSocialMedia('instagram')"></i>
 					</span>
 				</div>
-				<p class="">{{tileData.about}}</p>
+				<p>{{tileData.about}}</p>
 			</div>
 		</article>
 	</div>

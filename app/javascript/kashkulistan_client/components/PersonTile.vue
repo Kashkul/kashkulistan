@@ -6,13 +6,13 @@
 				<p class="subtitle">{{tileData.role}}</p>
 				<div class="social-media-icons">
 					<span class="icon has-text-info">
-					  <i class="fa fa-twitter"></i>
+					  <i class="fa fa-twitter" @click="openSocialMedia('twitter')"></i>
 					</span>
 					<span class="icon has-text-info">
-					  <i class="fa fa-facebook"></i>
+					  <i class="fa fa-facebook" @click="openSocialMedia('facebook')"></i>
 					</span>					
 					<span class="icon has-text-info">
-					  <i class="fa fa-instagram"></i>
+					  <i class="fa fa-instagram" @click="openSocialMedia('instagram')"></i>
 					</span>
 				</div>
 				<p class="">{{tileData.about}}</p>
@@ -29,7 +29,26 @@
 	    return {
 
 	    }
-	  }
+	  },
+	  methods: {
+	  	openSocialMedia(platform) {
+	  		var url
+	  		console.log('**&*&&&' + platform)
+	  		switch (platform) {
+	  			case 'twitter':
+	  				url = this.tileData.twitter
+	  				break
+	  			case 'facebook':
+	  				url = this.tileData.facebook
+	  				break
+	  			case 'instagram':
+	  				url = this.tileData.instagram
+	  		}
+	  		console.log(url)
+        let win = window.open(url, '_blank')
+        win.focus()
+      }
+    }
 	}
 </script>
 

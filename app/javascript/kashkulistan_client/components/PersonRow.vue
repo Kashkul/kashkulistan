@@ -1,7 +1,11 @@
 <template>
-	<div class="tile is-ancestor">
-		<person-tile v-for="personData in rowData" :tileData="personData"></person-tile>
-  </div>        
+	<section class="hero is-small">
+		<div class="hero-body">
+			<div class="tile is-ancestor">
+				<person-tile v-for="personData in rowData" :tileData="personData"></person-tile>
+		  </div>
+		 </div>
+  </section>        
 </template>
 
 <script>

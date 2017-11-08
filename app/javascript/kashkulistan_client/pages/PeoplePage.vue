@@ -3,9 +3,18 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="tile is-ancestor">
-          <div class="tile is-parent">
+
             <person-tile></person-tile>
-          </div>
+            <person-tile></person-tile>
+            <person-tile></person-tile>
+
+        </div>        
+        <div class="tile is-ancestor">
+
+            <person-tile></person-tile>
+            <person-tile></person-tile>
+            <person-tile></person-tile>
+
         </div>
       </div>
     </div>

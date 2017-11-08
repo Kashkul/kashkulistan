@@ -1,9 +1,18 @@
 <template>
-	<article class="tile is-child box">
-		<div class="content">
-			<p>Testing</p>
-		</div>
-	</article>
+	<div class="tile is-parent">
+		<article class="tile is-child box">
+			<div class="content">
+				<p>Testing</p>
+				<p>Testing</p>
+				<p>Testing</p>
+				<p>Testing</p>
+				<p>Testing</p>
+				<p>Testing</p>
+				<p>Testing</p>
+				<p>Testing</p>
+			</div>
+		</article>
+	</div>
 </template>
 
 <script>

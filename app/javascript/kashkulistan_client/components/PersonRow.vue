@@ -5,18 +5,18 @@
 </template>
 
 <script>
-import PersonTile from './PersonTile.vue'
-export default {
+	import PersonTile from './PersonTile.vue'
 
-  name: 'PersonRow',
-  props: ['rowData'],
-  components: {PersonTile},
-  data () {
-    return {
+	export default {
+	  name: 'PersonRow',
+	  props: ['rowData'],
+	  components: {PersonTile},
+	  data () {
+	    return {
 
-    }
-  }
-}
+	    }
+	  }
+	}
 </script>
 
 <style lang="sass" scoped>

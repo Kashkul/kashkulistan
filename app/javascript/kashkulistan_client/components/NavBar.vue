@@ -20,16 +20,15 @@
 </template>
 
 <script>
-export default {
+	export default {
 
-  name: 'NavBar',
-  data () {
-    return {
+	  name: 'NavBar',
+	  data () {
+	    return {
 
-    }
-  }
-}
-
+	    }
+	  }
+	}
 </script>
 
 <style lang="scss" scoped>

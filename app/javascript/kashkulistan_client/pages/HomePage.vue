@@ -18,23 +18,21 @@
 </template>
 
 <script>
+	import Parallax from 'vue-parallaxy'
+	import NavBar from '../components/NavBar.vue'
+	import SplashScreen from '../components/SplashScreen.vue'
+	import AboutSection from '../components/AboutSection.vue'
+	import InstagramCarousel from '../components/InstagramCarousel.vue'
 
-import Parallax from 'vue-parallaxy'
-import NavBar from '../components/NavBar.vue'
-import SplashScreen from '../components/SplashScreen.vue'
-import AboutSection from '../components/AboutSection.vue'
-import InstagramCarousel from '../components/InstagramCarousel.vue'
+	export default {
+	  name: 'HomePage',
+	  components: {Parallax, NavBar, SplashScreen, AboutSection, InstagramCarousel},
+	  data () {
+	    return {
 
-export default {
-  name: 'HomePage',
-  components: {Parallax, NavBar, SplashScreen, AboutSection, InstagramCarousel},
-  data () {
-    return {
-
-    }
-  }
-}
-
+	    }
+	  }
+	}
 </script>
 
 <style lang="sass" scoped>

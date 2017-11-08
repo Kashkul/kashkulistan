@@ -9,16 +9,14 @@
 </template>
 
 <script>
-export default {
+	export default {
+	  name: 'AboutSection',
+	  data () {
+	    return {
 
-  name: 'AboutSection',
-
-  data () {
-    return {
-
-    };
-  }
-};
+	    };
+	  }
+	};
 </script>
 
 <style lang="sass" scoped>

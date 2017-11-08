@@ -14,16 +14,14 @@
 </template>
 
 <script>
-export default {
+	export default {
+	  name: 'SplashScreen',
+	  data () {
+	    return {
 
-  name: 'SplashScreen',
-
-  data () {
-    return {
-
-    };
-  }
-};
+	    }
+	  }
+	}
 </script>
 
 <style lang="scss" scoped>

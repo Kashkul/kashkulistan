@@ -1,11 +1,18 @@
 <template>
-  <section class="hero is-fullheight is-white">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <person-row v-for="group in peopleData" :rowData="group"></person-row>
+  <div>
+    <section class="hero is-small is-white">
+      <div class="hero-body">
+        
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="hero is-fullheight is-white">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <person-row v-for="group in peopleData" :rowData="group"></person-row>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

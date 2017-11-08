@@ -9,6 +9,8 @@ import router from '../kashkulistan_client/router/index.js'
 
 Vue.use(VueRouter)
 
+import 'font-awesome/css/font-awesome.css'
+
 document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(document.createElement('app'))
   const app = new Vue({

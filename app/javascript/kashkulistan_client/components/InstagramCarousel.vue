@@ -25,10 +25,9 @@
 </script>
 
 <style lang="sass" scoped>
-@import '~bulma'
+  @import '~bulma'
 
-.carousel-container
-  padding: 8%
-
+  .carousel-container
+    padding: 8%
 
 </style>

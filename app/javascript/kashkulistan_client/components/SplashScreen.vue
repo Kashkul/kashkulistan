@@ -25,6 +25,6 @@
 </script>
 
 <style lang="scss" scoped>
-@import '~bulma'
+	@import '~bulma'
 
 </style>

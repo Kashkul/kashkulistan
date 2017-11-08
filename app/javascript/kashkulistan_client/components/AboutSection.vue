@@ -20,5 +20,6 @@
 </script>
 
 <style lang="sass" scoped>
-@import '~bulma'
+	@import '~bulma'
+	
 </style>

@@ -11,7 +11,7 @@
 <script>
   import axios from 'axios'
   import PersonRow from '../components/PersonRow.vue'
-  
+
   export default {
     name: 'PeoplePage',
     components: {PersonRow},
@@ -34,6 +34,6 @@
 </script>
 
 <style lang="sass" scoped>
-@import '~bulma'
+  @import '~bulma'
 
 </style>

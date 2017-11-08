@@ -1,6 +1,6 @@
 class Api::V1::PeopleController < ApplicationController
 	def index
-		@people = People.all
+		@people = Person.all
 		render json: @people
 	end
 end

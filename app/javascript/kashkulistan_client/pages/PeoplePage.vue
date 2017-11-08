@@ -23,6 +23,7 @@
 
 <script>
 
+import axios from 'axios'
 import PersonTile from '../components/PersonTile.vue'
 export default {
 
@@ -32,6 +33,16 @@ export default {
     return {
 
     }
+  },
+  created: function() {
+    axios.get(`api/v1/people`)
+    .then(response => {
+      // JSON responses are automatically parsed.
+      console.log(response.data)
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
   }
 }
 

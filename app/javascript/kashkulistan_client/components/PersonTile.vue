@@ -33,7 +33,7 @@
 	  methods: {
 	  	openSocialMedia(platform) {
 	  		var url
-	  		console.log('**&*&&&' + platform)
+	  		//determines which social media platform url to use
 	  		switch (platform) {
 	  			case 'twitter':
 	  				url = this.tileData.twitter
@@ -44,7 +44,7 @@
 	  			case 'instagram':
 	  				url = this.tileData.instagram
 	  		}
-	  		console.log(url)
+	  		//opens url in new tab
         let win = window.open(url, '_blank')
         win.focus()
       }

@@ -1,6 +1,6 @@
 <template>
 	<div class="tile is-ancestor">
-		<person-tile></person-tile>
+		<person-tile v-for="personData in rowData" :tileData="personData"></person-tile>
   </div>        
 </template>
 
@@ -21,5 +21,5 @@
 
 <style lang="sass" scoped>
 	@import '~bulma'
-	
+
 </style>

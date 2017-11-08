@@ -1,11 +1,18 @@
 <template>
+	<div class="tile is-ancestor">
+		<div class="tile is-parent">
+			<div class="tile is-child">
+				<p>{{rowData}}</p>
+			</div>
+		</div>
+  </div>        
 </template>
 
 <script>
 export default {
 
   name: 'PersonRow',
-
+  props: ['rowData'],
   data () {
     return {
 
@@ -14,5 +21,6 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="sass" scoped>
+@import '~bulma'
 </style>

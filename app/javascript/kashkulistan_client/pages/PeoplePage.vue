@@ -2,7 +2,7 @@
   <section class="hero is-fullheight is-white">
     <div class="hero-body">
       <div class="container has-text-centered">
-        {{peopleData}}
+        <person-row v-for="group in peopleData" :rowData="group"></person-row>
       </div>
     </div>
   </section>
@@ -11,11 +11,11 @@
 <script>
 
 import axios from 'axios'
-// import PersonRow from '../components/PersonRow.vue'
+import PersonRow from '../components/PersonRow.vue'
 export default {
 
   name: 'PeoplePage',
-  components: {  },
+  components: {PersonRow},
   data () {
     return {
       //peopleData will be set to the data in the server response - see created function below.

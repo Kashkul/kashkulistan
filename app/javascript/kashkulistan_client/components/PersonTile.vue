@@ -2,7 +2,9 @@
 	<div class="tile is-parent">
 		<article class="tile is-child notification is-light box">
 			<div class="content">
-				<p>{{tileData}}</p>
+				<p class="title">{{tileData.name}}</p>
+				<p class="subtitle">{{tileData.role}}</p>
+				<p class="">{{tileData.about}}</p>
 			</div>
 		</article>
 	</div>

@@ -31,6 +31,7 @@
 	    }
 	  },
 	  methods: {
+	  	//TO-DO: refactor without switch statement. Don't really need a method here at all - just use hrefs
 	  	openSocialMedia(platform) {
 	  		var url
 	  		//determines which social media platform url to use

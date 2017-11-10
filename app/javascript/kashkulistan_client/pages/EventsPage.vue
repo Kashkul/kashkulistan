@@ -2,14 +2,17 @@
 </template>
 
 <script>
-export default {
-  name: 'EventsPage',
-  data () {
-    return {
+	import Timeline from '../components/Timeline.vue'
 
-    }
-  }
-}
+	export default {
+	  name: 'EventsPage',
+	  components: { Timeline },
+	  data () {
+	    return {
+
+	    }
+	  }
+	}
 </script>
 
 <style lang="sass" scoped>

@@ -1,9 +1,7 @@
 <template>
-	<section class="hero is-fullheight">
-		<div class="hero-body">
+	
 			<timeline></timeline>
-		</div>
-	</section>
+
 </template>
 
 <script>

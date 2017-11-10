@@ -19,6 +19,84 @@
         Some content here
       </div>
     </li>
+    <li>
+      <div>
+        <time>1964</time>
+        Some content here
+      </div>
+    </li>    
+    <li>
+      <div>
+        <time>1934</time>
+        Some content here
+      </div>
+    </li>    
+    <li>
+      <div>
+        <time>1942</time>
+        Some content here
+      </div>
+    </li>    
+    <li>
+      <div>
+        <time>1964</time>
+        Some content here
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1964</time>
+        Some content here
+      </div>
+    </li>    
+    <li>
+      <div>
+        <time>1934</time>
+        Some content here
+      </div>
+    </li>    
+    <li>
+      <div>
+        <time>1942</time>
+        Some content here
+      </div>
+    </li>    
+    <li>
+      <div>
+        <time>1964</time>
+        Some content here
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1964</time>
+        Some content here
+      </div>
+    </li>    
+    <li>
+      <div>
+        <time>1934</time>
+        Some content here
+      </div>
+    </li>    
+    <li>
+      <div>
+        <time>1942</time>
+        Some content here
+      </div>
+    </li>    
+    <li>
+      <div>
+        <time>1964</time>
+        Some content here
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1964</time>
+        Some content here
+      </div>
+    </li>
     <!-- more list items here -->
   </ul>
 </section>
@@ -37,4 +115,55 @@ export default {
 
 <style lang="sass" scoped>
 	@import '~bulma'
+
+	.timeline ul li
+		list-style-type: none
+		position: relative
+		width: 6px
+		margin: 0 auto
+		padding-top: 50px
+		background: $dark
+
+	.timeline ul li::after
+		content: ''
+		position: absolute
+		left: 50%
+		bottom: 0
+		transform: translateX(-50%)
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		background: $info
+
+	.timeline ul li div
+		position: relative
+		bottom: 0
+		width: 400px
+		padding: 15px
+		background: $info
+
+	.timeline ul li div::before
+		content: ''
+		position: absolute
+		bottom: 7px
+		width: 0
+		height: 0
+		border-style: solid
+
+	.timeline ul li:nth-child(odd) div
+		left: 45px
+
+	.timeline ul li:nth-child(odd) div::before
+		left: -15px
+		border-width: 8px 16px 8px 0
+		border-color: transparent $info transparent transparent	
+
+	.timeline ul li:nth-child(even) div
+		left: -460px
+
+	.timeline ul li:nth-child(even) div::before
+		right: -15px
+		border-width: 8px 0 8px 16px
+		border-color: transparent transparent transparent $info
+ 
 </style>

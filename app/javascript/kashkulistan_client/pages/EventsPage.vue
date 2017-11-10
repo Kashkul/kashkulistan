@@ -1,7 +1,7 @@
 <template>
 	<section class="hero is-fullheight">
 		<div class="hero-body">
-			<p class="title">You have reached Events</p>
+			<timeline></timeline>
 		</div>
 	</section>
 </template>

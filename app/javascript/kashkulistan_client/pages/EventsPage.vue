@@ -1,7 +1,5 @@
 <template>
-	
-			<timeline></timeline>
-
+	<timeline></timeline>
 </template>
 
 <script>
@@ -20,4 +18,5 @@
 
 <style lang="sass" scoped>
 	@import '~bulma'
+
 </style>

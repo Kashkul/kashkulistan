@@ -1,105 +1,52 @@
 <template>
-	<section class="timeline">
-  <ul>
-    <li>
-      <div>
-        <time>1934</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1942</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1964</time>
-        Some content here
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1964</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1934</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1942</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1964</time>
-        Some content here
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1964</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1934</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1942</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1964</time>
-        Some content here
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1964</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1934</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1942</time>
-        Some content here
-      </div>
-    </li>    
-    <li>
-      <div>
-        <time>1964</time>
-        Some content here
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1964</time>
-        Some content here
-      </div>
-    </li>
-    <!-- more list items here -->
-  </ul>
-</section>
+	<div class="timeline is-centered">
+		<header class="timeline-header">
+			<span class="tag is-medium is-primary">Start</span>
+		</header>
+		<div class="timeline-item is-primary">
+			<div class="timeline-marker is-primary"></div>
+			<div class="timeline-content">
+				<p class="heading title">January 2016</p>
+				<div class="card">
+					<div class="card content">
+						<p class="title">Stuff</p>
+						<p class="subtitle">More stuff</p>
+						<p>About this this this this this htsisdfoldisf oisjdfosuhdfsudf ojsdfohwsdfg l</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="timeline-item is-warning">
+			<div class="timeline-marker is-warning is-image is-32x32">
+				<img src="http://bulma.io/images/placeholders/32x32.png">
+			</div>
+			<div class="timeline-content">
+				<p class="heading">February 2016</p>
+				<div class="card">
+					<div class="card content">
+						<p class="title">Stuff</p>
+						<p class="subtitle">More stuff</p>
+						<p>About this this this this this htsisdfoldisf oisjdfosuhdfsudf ojsdfohwsdfg l</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="timeline-header">
+			<span class="tag is-primary">2017</span>
+		</header>
+		<div class="timeline-item is-danger">
+			<div class="timeline-marker is-danger is-icon">
+				<i class="fa fa-flag"></i>
+			</div>
+			<div class="timeline-content">
+				<p class="heading">March 2017</p>
+				<p>Timeline content - Can include any HTML element</p>
+			</div>
+		</div>
+		<header class="timeline-header">
+			<span class="tag is-medium is-primary">End</span>
+		</header>
+	</div>
 </template>
 
 <script>
@@ -114,56 +61,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-	@import '~bulma'
-
-	.timeline ul li
-		list-style-type: none
-		position: relative
-		width: 6px
-		margin: 0 auto
-		padding-top: 50px
-		background: $dark
-
-	.timeline ul li::after
-		content: ''
-		position: absolute
-		left: 50%
-		bottom: 0
-		transform: translateX(-50%)
-		width: 30px
-		height: 30px
-		border-radius: 50%
-		background: $info
-
-	.timeline ul li div
-		position: relative
-		bottom: 0
-		width: 400px
-		padding: 15px
-		background: $info
-
-	.timeline ul li div::before
-		content: ''
-		position: absolute
-		bottom: 7px
-		width: 0
-		height: 0
-		border-style: solid
-
-	.timeline ul li:nth-child(odd) div
-		left: 45px
-
-	.timeline ul li:nth-child(odd) div::before
-		left: -15px
-		border-width: 8px 16px 8px 0
-		border-color: transparent $info transparent transparent	
-
-	.timeline ul li:nth-child(even) div
-		left: -460px
-
-	.timeline ul li:nth-child(even) div::before
-		right: -15px
-		border-width: 8px 0 8px 16px
-		border-color: transparent transparent transparent $info
+	@import '~bulma', '~bulma-timeline'
  
 </style>

@@ -1,10 +1,10 @@
 <template>
   <div class="carousel-container">
   	<carousel  :autoplay="true" :perPage="2">
-  		<slide class="slide"><img src="../images/instastatic/1.png"></slide>
-  		<slide class="slide"><img src="../images/instastatic/2.png"></slide>
-  		<slide class="slide"><img src="../images/instastatic/3.png"></slide>
-  		<slide class="slide"><img src="../images/instastatic/4.png"></slide>
+  		<slide class="slide"><img src="assets/instastatic/1.png"></slide>
+  		<slide class="slide"><img src="assets/instastatic/2.png"></slide>
+  		<slide class="slide"><img src="assets/instastatic/3.png"></slide>
+  		<slide class="slide"><img src="assets/instastatic/4.png"></slide>
   	</carousel>
   </div>
 </template>

@@ -1,17 +1,14 @@
 <template>
   <div>
-    <section class="hero is-small is-white">
-      <div class="hero-body">
-        
+    <section class="hero is-large is-white">
+      <div class="hero-body container has-text-centered">
+        <p class="title">Who is Kashkul?</p>
+        <p class="subtitle">Maybe say some more stuff here. Probably make this centered.</p> 
       </div>
     </section>
-    <section class="hero is-fullheight is-white">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <person-row v-for="group in peopleData" :rowData="group"></person-row>
-        </div>
-      </div>
-    </section>
+    <div class="container has-text-centered">
+      <person-row v-for="group in peopleData" :rowData="group"></person-row>
+    </div>
   </div>
 </template>
 

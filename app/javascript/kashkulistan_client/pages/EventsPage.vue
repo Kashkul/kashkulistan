@@ -1,8 +1,9 @@
 <template>
 	<div>
-		<section class="hero is-medium">
-			<div class="hero-body">
+		<section class="hero is-large">
+			<div class="hero-body container has-text-centered">
 				<p class="title">Events</p>
+				<p class="subtitle">Stuff about events</p>
 			</div>			
 		</section>
 		<timeline></timeline>

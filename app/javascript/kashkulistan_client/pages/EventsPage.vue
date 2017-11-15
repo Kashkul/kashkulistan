@@ -1,5 +1,12 @@
 <template>
-	<timeline></timeline>
+	<div>
+		<section class="hero is-medium">
+			<div class="hero-body">
+				<p class="title">Events</p>
+			</div>			
+		</section>
+		<timeline></timeline>
+	</div>
 </template>
 
 <script>

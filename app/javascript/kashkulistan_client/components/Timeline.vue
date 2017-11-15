@@ -1,10 +1,5 @@
 <template>
 	<section>
-		<section class="hero is-medium">
-			<div class="hero-body">
-				<p class="title">Events</p>
-			</div>			
-		</section>
 		<div class="timeline is-centered">
 			<div class="timeline-item is-dark">
 				<div class="timeline-marker is-dark"></div>

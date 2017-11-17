@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero is-large is-white">
+    <section class="hero is-large">
       <div class="hero-body container has-text-centered">
         <p class="title">Who is Kashkul?</p>
         <p class="subtitle">Maybe say some more stuff here. Probably make this centered.</p> 

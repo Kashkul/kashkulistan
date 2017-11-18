@@ -21,6 +21,7 @@
 <script>
 	export default {
 	  name: 'Timeline',
+	  props: ['timelineData'],
 	  data () {
 	    return {
 

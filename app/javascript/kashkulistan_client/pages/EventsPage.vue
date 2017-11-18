@@ -6,7 +6,7 @@
 				<p class="subtitle">Stuff about events</p>
 			</div>			
 		</section>
-		<timeline></timeline>
+		<timeline :timelineData="eventsData"></timeline>
 	</div>
 </template>
 

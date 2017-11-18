@@ -1,15 +1,15 @@
 <template>
 	<section>
 		<div class="timeline is-centered">
-			<div class="timeline-item is-dark">
+			<div v-for="item in timelineData" class="timeline-item is-dark">
 				<div class="timeline-marker is-dark"></div>
 				<div class="timeline-content">
 					<div class="card">
 					<div class="section">
-						<p class="title heading">January 26, 2016</p>
-						<p class="title">Stuff</p>
+						<p class="title heading">{{item.date}}</p>
+						<p class="title">{{item.name}}</p>
 						<p class="subtitle">More stuff</p>
-						<p>About this this this this this htsisdfoldisf oisjdfosuhdfsudf ojsdfohwsdfg l</p>
+						<p>{{item.description}}</p>
 					</div>
 				</div>
 				</div>

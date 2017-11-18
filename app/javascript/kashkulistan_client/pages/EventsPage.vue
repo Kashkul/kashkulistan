@@ -12,15 +12,22 @@
 
 <script>
 	import Timeline from '../components/Timeline.vue'
+	import axios from 'axios'
 
 	export default {
-	  name: 'EventsPage',
-	  components: { Timeline },
-	  data () {
-	    return {
-
-	    }
-	  }
+		name: 'EventsPage',
+		components: { Timeline },
+		data () {
+			return {
+				eventsData: []
+			}
+		},
+		created() {
+			axios.get(`api/v1/events`)
+			.then(response => {
+				this.eventsData = response.data
+			})
+		}
 	}
 </script>
 

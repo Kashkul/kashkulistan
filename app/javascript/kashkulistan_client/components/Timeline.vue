@@ -19,14 +19,14 @@
 </template>
 
 <script>
-export default {
-  name: 'Timeline',
-  data () {
-    return {
+	export default {
+	  name: 'Timeline',
+	  data () {
+	    return {
 
-    }
-  }
-}
+	    }
+	  }
+	}
 </script>
 
 <style lang="sass" scoped>

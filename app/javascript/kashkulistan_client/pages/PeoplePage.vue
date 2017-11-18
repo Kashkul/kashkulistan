@@ -25,7 +25,7 @@
         peopleData: []
       }
     },
-    created: function() {
+    created () {
       axios.get(`api/v1/people`)
       .then(response => {
         this.peopleData = response.data

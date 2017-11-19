@@ -4575,6 +4575,10 @@ schema-utils@^0.3.0:
   dependencies:
     ajv "^5.0.0"
 
+scrollreveal@^3.3.6:
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/scrollreveal/-/scrollreveal-3.3.6.tgz#659b7bf0ba0e244dced978ac5540c00b43773e4a"
+
 scss-tokenizer@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz#8eb06db9a9723333824d3f5530641149847ce5d1"
@@ -5234,6 +5238,12 @@ vue-parallaxy@^1.0.3:
 vue-router@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
+
+vue-scroll-reveal@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-scroll-reveal/-/vue-scroll-reveal-1.0.3.tgz#2692548ac5f5cdc46f5dffe5dfd5f9a3115b1176"
+  dependencies:
+    scrollreveal "^3.3.6"
 
 vue-style-loader@^3.0.0:
   version "3.0.3"

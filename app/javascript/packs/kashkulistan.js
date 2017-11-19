@@ -6,8 +6,10 @@ import Vue from 'vue/dist/vue.esm'
 import VueRouter from 'vue-router';
 import App from '../kashkulistan_client/app.vue'
 import router from '../kashkulistan_client/router/index.js'
-
+import VueScrollReveal from 'vue-scroll-reveal'
+ 
 Vue.use(VueRouter)
+Vue.use(VueScrollReveal)
 
 import 'font-awesome/css/font-awesome.css'
 

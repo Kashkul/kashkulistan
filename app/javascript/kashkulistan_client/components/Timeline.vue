@@ -4,14 +4,16 @@
 			<div v-for="item in timelineData" class="timeline-item is-dark">
 				<div class="timeline-marker is-dark"></div>
 				<div class="timeline-content">
-					<div class="card">
-					<div class="section">
-						<p class="title heading">{{item.date}}</p>
-						<p class="title">{{item.name}}</p>
-						<p class="subtitle">More stuff</p>
-						<p>{{item.description}}</p>
-					</div>
-				</div>
+					<section v-scroll-reveal.reset>
+						<div class="card">
+							<div class="section">
+								<p class="title heading">{{item.date}}</p>
+								<p class="title">{{item.name}}</p>
+								<p class="subtitle">More stuff</p>
+								<p>{{item.description}}</p>
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
 		</div>

@@ -18,6 +18,7 @@
     "vue-loader": "^13.3.0",
     "vue-parallaxy": "^1.0.3",
     "vue-router": "^3.0.1",
+    "vue-scroll-reveal": "^1.0.3",
     "vue-template-compiler": "^2.5.2"
   },
   "devDependencies": {

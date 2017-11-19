@@ -1,22 +1,24 @@
 <template>
 	<div class="tile is-parent">
 		<article class="tile is-child notification is-light box">
-			<div class="content">
-				<p class="title">{{tileData.name}}</p>
-				<p class="subtitle">{{tileData.role}}</p>
-				<div class="social-media-icons">
-					<span class="icon has-text-info">
-					  <i class="fa fa-twitter" @click="openSocialMedia('twitter')"></i>
-					</span>
-					<span class="icon has-text-info">
-					  <i class="fa fa-facebook" @click="openSocialMedia('facebook')"></i>
-					</span>					
-					<span class="icon has-text-info">
-					  <i class="fa fa-instagram" @click="openSocialMedia('instagram')"></i>
-					</span>
+			<section v-scroll-reveal>
+				<div class="content">
+					<p class="title">{{tileData.name}}</p>
+					<p class="subtitle">{{tileData.role}}</p>
+					<div class="social-media-icons">
+						<span class="icon has-text-info">
+							<i class="fa fa-twitter" @click="openSocialMedia('twitter')"></i>
+						</span>
+						<span class="icon has-text-info">
+							<i class="fa fa-facebook" @click="openSocialMedia('facebook')"></i>
+						</span>					
+						<span class="icon has-text-info">
+							<i class="fa fa-instagram" @click="openSocialMedia('instagram')"></i>
+						</span>
+					</div>
+					<p>{{tileData.about}}</p>
 				</div>
-				<p>{{tileData.about}}</p>
-			</div>
+			</section>
 		</article>
 	</div>
 </template>

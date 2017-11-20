@@ -6,12 +6,20 @@
         <p class="subtitle">These are projects. Something neat will be written here.</p> 
       </div>
     </section>
+    <project-tile></project-tile>
+    <project-tile></project-tile>
+    <project-tile></project-tile>
+    <project-tile></project-tile>
+    <project-tile></project-tile>
   </div>
 </template>
 
 <script>
+	import ProjectTile from '../components/ProjectTile.vue'
+
 	export default {
 	  name: 'ProjectsPage',
+	  components: {ProjectTile},
 	  data () {
 	    return {
 

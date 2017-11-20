@@ -14,6 +14,9 @@
 					</div>
 					<div class="navbar-item">
 						<router-link to="Events">Events</router-link>
+					</div>	
+					<div class="navbar-item">
+						<router-link to="Projects">Projects</router-link>
 					</div>					
 				</div>
 			</div>

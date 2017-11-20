@@ -1,6 +1,6 @@
 <template>
 	<div class="tile is-parent">
-		<article class="tile is-child notification is-light box">
+		<article class="tile is-child is-light box">
 			<section v-scroll-reveal>
 				<div class="content">
 					<p class="title">{{tileData.name}}</p>

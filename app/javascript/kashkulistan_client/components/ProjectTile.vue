@@ -1,20 +1,19 @@
 <template>
-	<section>
-	<div class="tile is-ancestor">
-		<div class="tile is-parent">
-			<article class="tile is-child box notification is-info">
-				<p>Stuff in here....</p>
-			</article>			
-		</div>		<div class="tile is-parent">
-			<article class="tile is-child box notification is-info">
-				<p>Stuff in here....</p>
-			</article>			
-		</div>		<div class="tile is-parent">
-			<article class="tile is-child box notification is-info">
-				<p>Stuff in here....</p>
-			</article>			
+	<section class="hero">
+		<div class="hero-body">
+			<div class="tile is-ancestor">
+				<div class="tile is-parent">
+					<article class="tile is-child box notification is-dark">
+						<p>Stuff in here....</p>
+					</article>			
+				</div>		
+				<div class="tile is-parent">
+					<article class="tile is-child box notification is-dark">
+						<p>Stuff in here....</p>
+					</article>			
+				</div>		
+			</div>
 		</div>
-	</div>
 	</section>
 </template>
 

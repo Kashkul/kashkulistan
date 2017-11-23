@@ -4,14 +4,13 @@
 			<div class="tile is-ancestor">
 				<div class="tile is-parent">
 					<article class="tile is-child box notification is-dark">
-						<p>Stuff in here....</p>
+						<section class="hero">
+							<div class="hero-body">
+								<p class="title">Stuff</p>
+							</div>
+						</section>
 					</article>			
-				</div>		
-				<div class="tile is-parent">
-					<article class="tile is-child box notification is-dark">
-						<p>Stuff in here....</p>
-					</article>			
-				</div>		
+				</div>				
 			</div>
 		</div>
 	</section>

@@ -6,14 +6,19 @@
 		<section class="hero is-large is-white">
 			<div class="hero-body">
 				<div class="container has-text-centered">
-					<h1 class="subtitle is-3">
+					<h1 class="title">
 						<strong>This is our kashkul.</strong>
 					</h1>
 				</div>
 			</div>
 		</section>
-						<instagram-carousel></instagram-carousel>
+		<instagram-carousel></instagram-carousel>
 		<about-section></about-section>
+		<section class="hero is-white is-fullheight">
+			<div class="hero-body">
+				
+			</div>
+		</section>
 	</div>
 </template>
 

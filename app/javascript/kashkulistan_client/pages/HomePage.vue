@@ -12,7 +12,9 @@
 				</div>
 			</div>
 		</section>
-		<instagram-carousel></instagram-carousel>
+		<section class="hero is-small">
+			<instagram-carousel></instagram-carousel>
+		</section>
 		<about-section></about-section>
 		<section class="hero is-white is-fullheight">
 			<div class="hero-body">

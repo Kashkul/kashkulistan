@@ -32,7 +32,7 @@
 
 	export default {
 	  name: 'HomePage',
-	  components: {Parallax, NavBar, SplashScreen, AboutSection, InstagramCarousel},
+	  components: {Parallax, SplashScreen, AboutSection, InstagramCarousel},
 	  data () {
 	    return {
 

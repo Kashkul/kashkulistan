@@ -3,7 +3,7 @@
 		<parallax :fixed="true">
 			<splash-screen></splash-screen>
 		</parallax>
-		<section class="hero is-medium is-white">
+		<section class="hero is-large is-white">
 			<div class="hero-body">
 				<div class="container has-text-centered">
 					<h1 class="title">

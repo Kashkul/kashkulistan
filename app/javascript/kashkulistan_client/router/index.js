@@ -4,7 +4,6 @@ import NavBar from '../components/NavBar.vue'
 import HomePage from '../pages/HomePage.vue'
 import PeoplePage from '../pages/PeoplePage.vue'
 import EventsPage from '../pages/EventsPage.vue'
-import ProjectsPage from '../pages/ProjectsPage.vue'
 
 Vue.use(VueRouter)
 
@@ -24,11 +23,6 @@ export default new VueRouter({
 			path: '/events',
 			name: 'events',
 			component: EventsPage
-		},
-		{
-			path: '/projects',
-			name: 'projects',
-			component: ProjectsPage
 		}
 	]
 })

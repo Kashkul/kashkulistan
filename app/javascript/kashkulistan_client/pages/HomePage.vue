@@ -16,6 +16,7 @@
 			<instagram-carousel></instagram-carousel>
 		</section>
 		<about-section></about-section>
+		<projects-section></projects-section>
 		<section class="hero is-white is-fullheight">
 			<div class="hero-body">
 				
@@ -29,10 +30,11 @@
 	import SplashScreen from '../components/SplashScreen.vue'
 	import AboutSection from '../components/AboutSection.vue'
 	import InstagramCarousel from '../components/InstagramCarousel.vue'
+	import ProjectsSection from '../components/ProjectsSection.vue'
 
 	export default {
 	  name: 'HomePage',
-	  components: {Parallax, SplashScreen, AboutSection, InstagramCarousel},
+	  components: {Parallax, SplashScreen, AboutSection, InstagramCarousel, ProjectsSection},
 	  data () {
 	    return {
 

@@ -1,9 +1,13 @@
 <template>
 	<div>
-		<section class="hero is-large">
+		<section class="hero is-large is-dark">
 			<div class="hero-body container has-text-centered">
 				<p class="title">Events</p>
 				<p class="subtitle">Stuff about events</p>
+			</div>			
+		</section>		
+		<section class="hero">
+			<div class="hero-body">
 			</div>			
 		</section>
 		<timeline :timelineData="eventsData"></timeline>

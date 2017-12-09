@@ -6,6 +6,10 @@
         <p class="subtitle">Maybe say some more stuff here. Probably make this centered.</p> 
       </div>
     </section>
+    <section class="hero">
+      <div class="hero-body">
+      </div>      
+    </section>
     <div class="container has-text-centered">
       <person-row v-for="group in peopleData" :rowData="group"></person-row>
     </div>

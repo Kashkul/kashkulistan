@@ -16,6 +16,10 @@
 			<instagram-carousel></instagram-carousel>
 		</section>
 		<about-section></about-section>
+		<section class="hero is-large">
+			<div class="hero-body">
+			</div>
+		</section>
 		<projects-section></projects-section>
 		<section class="hero is-white is-fullheight">
 			<div class="hero-body">

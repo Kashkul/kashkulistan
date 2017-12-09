@@ -1,20 +1,14 @@
 <template>
-	<section class="hero">
-		<div class="hero-body">
-			<div class="tile is-ancestor">
-				<div class="tile is-parent">
-					<article class="tile is-child box notification is-dark">
-						<section class="hero">
-							<div class="hero-body content">
-								<p class="title">Stuff</p>
-								<p class="Subtitle">More stuff about the event. Use the short one line description. Maybe it's a couplefew sentences?</p>
-							</div>
-						</section>
-					</article>			
-				</div>				
-			</div>
-		</div>
-	</section>
+	<div class="tile is-parent is-4">
+		<article class="tile is-child box">
+			<p class="title">Project Name</p>
+			<p class="">Here is where the one line description goes. This will click through to the project's page/site.</p>
+			<br>
+			<figure class="image is-4by3">
+				<img src="https://bulma.io/images/placeholders/640x480.png">
+			</figure>
+		</article>		
+	</div>				
 </template>
 
 <script>

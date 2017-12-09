@@ -9,13 +9,18 @@
 			</div>
 		</section>
 		<section class="hero is-white">
-			<div class="hero-body">
+			<div class="hero-body container has-text-centered">
 				<div class="tile is-ancestor">
-						<project-tile></project-tile>
-						<project-tile></project-tile>
-						<project-tile></project-tile>
-						<project-tile></project-tile>
-						<project-tile></project-tile>
+					<project-tile></project-tile>
+					<project-tile></project-tile>
+				</div>				
+				<div class="tile is-ancestor">
+					<project-tile></project-tile>
+					<project-tile></project-tile>
+				</div>				
+				<div class="tile is-ancestor">
+					<project-tile></project-tile>
+					<project-tile></project-tile>
 				</div>
 			</div>
 		</section>

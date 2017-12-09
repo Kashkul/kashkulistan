@@ -10,15 +10,15 @@
 		</section>
 		<section class="hero is-white">
 			<div class="hero-body container has-text-centered">
-				<div class="tile is-ancestor">
+				<div class="tile is-ancestor"  v-scroll-reveal.reset>
 					<project-tile></project-tile>
 					<project-tile></project-tile>
 				</div>				
-				<div class="tile is-ancestor">
+				<div class="tile is-ancestor"  v-scroll-reveal.reset>
 					<project-tile></project-tile>
 					<project-tile></project-tile>
 				</div>				
-				<div class="tile is-ancestor">
+				<div class="tile is-ancestor"  v-scroll-reveal.reset>
 					<project-tile></project-tile>
 					<project-tile></project-tile>
 				</div>

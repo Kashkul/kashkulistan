@@ -33,7 +33,7 @@
 </script>
 
 <style lang="sass" scoped>
-  @import '~bulma'
+  @import '../styles/app.sass'
 
   .carousel-container
     padding: 8%

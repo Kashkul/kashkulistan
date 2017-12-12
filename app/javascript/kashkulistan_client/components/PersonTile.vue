@@ -56,7 +56,7 @@
 </script>
 
 <style lang="sass" scoped>
-	@import '~bulma'
+	@import '../styles/app.sass'
 
 	.social-media-icons
 		margin-bottom: 20px

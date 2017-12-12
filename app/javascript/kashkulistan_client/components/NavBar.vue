@@ -33,7 +33,7 @@
 	}
 </script>
 
-<style lang="scss" scoped>
-	@import '~bulma'
+<style lang="sass" scoped>
+	@import '../styles/app.sass'
 
 </style>

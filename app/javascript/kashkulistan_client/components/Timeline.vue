@@ -33,6 +33,6 @@
 </script>
 
 <style lang="sass" scoped>
-	@import '~bulma', '~bulma-timeline'
+	@import '../styles/app.sass', '~bulma-timeline'
  
 </style>

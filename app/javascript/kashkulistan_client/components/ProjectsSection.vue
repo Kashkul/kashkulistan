@@ -28,17 +28,28 @@
 </template>
 
 <script>
+	import axios from 'axios'
+	import ProjectTile from './ProjectTile.vue'
 
-import ProjectTile from './ProjectTile.vue'
-export default {
-  name: 'ProjectsSection',
-  components: {ProjectTile},
-  data () {
-    return {
-
-    }
-  }
-}
+	export default {
+	  name: 'ProjectsSection',
+	  components: {ProjectTile},
+	  data () {
+	    return {
+	    	projectsData: []
+	    }
+	  },
+	  created () {
+	      axios.get(`api/v1/projects`)
+	      .then(response => {
+	        this.projectsData = response.data
+	        console.log(this.projectsData)
+	      })
+	      .catch(e => {
+	        this.errors.push(e)
+	      })
+	    }
+	}
 </script>
 
 <style lang="sass" scoped>

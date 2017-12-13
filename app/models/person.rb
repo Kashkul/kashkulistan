@@ -1,6 +1,7 @@
 class Person < ApplicationRecord
 	#make_rows takes all instances of people in the database and organizes them into groups of designated size, 
 	#which allows the front-end to easily format them into rows using the tile format.
+	#TODO: refactor this/projects method to make it DRY.
 	def self.make_rows(number)
 		#select all people
 		people = self.all

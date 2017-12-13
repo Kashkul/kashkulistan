@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  @import '~bulma'
+  @import './styles/app.sass'
 
   div
     font-family: $family-primary

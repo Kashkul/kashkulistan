@@ -21,3 +21,7 @@ Person.create!(name: 'Elizabeth Campbell', role: 'Co-Founder and Co-Director', a
 10.times do
 	Event.create!(name: 'Event for Stuff', date: 'January 19, 2016', description: 'This was an event that was for stuff. We did some really cool stuff, and it was a lot of fun. Lots of fun. Fun fun fun. Really cool event. We did some cool stuff. It was an event. You should have been there; you missed out. Loser.')
 end
+
+10.times do
+	Project.create!(name: 'Project from the DB', description: 'This is the description of the project coming from the database. It is a really neat project and you should read all about it.')
+end

@@ -10,18 +10,7 @@
 		</section>
 		<section class="hero is-white">
 			<div class="hero-body container has-text-centered">
-				<div class="tile is-ancestor"  v-scroll-reveal.reset>
-					<project-tile></project-tile>
-					<project-tile></project-tile>
-				</div>				
-				<div class="tile is-ancestor"  v-scroll-reveal.reset>
-					<project-tile></project-tile>
-					<project-tile></project-tile>
-				</div>				
-				<div class="tile is-ancestor"  v-scroll-reveal.reset>
-					<project-tile></project-tile>
-					<project-tile></project-tile>
-				</div>
+				<project-row v-for="group in projectsData" :rowData="group"></project-row> 
 			</div>
 		</section>
 	</div>
@@ -29,11 +18,11 @@
 
 <script>
 	import axios from 'axios'
-	import ProjectTile from './ProjectTile.vue'
+	import ProjectRow from './ProjectRow.vue'
 
 	export default {
 	  name: 'ProjectsSection',
-	  components: {ProjectTile},
+	  components: {ProjectRow},
 	  data () {
 	    return {
 	    	projectsData: []

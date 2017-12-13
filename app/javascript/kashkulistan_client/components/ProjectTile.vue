@@ -1,5 +1,5 @@
 <template>
-	<div class="tile is-parent is-6">
+	<div class="tile is-parent">
 		<article class="tile is-child box">
 			<p class="title">{{tileData.name}}</p>
 			<br>

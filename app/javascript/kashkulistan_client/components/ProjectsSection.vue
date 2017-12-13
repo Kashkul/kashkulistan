@@ -10,7 +10,9 @@
 		</section>
 		<section class="hero is-white">
 			<div class="hero-body container has-text-centered">
-				<project-row v-for="group in projectsData" :rowData="group"></project-row> 
+				<div class="tile is-ancestor is-vertical">
+					<project-row v-for="group in projectsData" :rowData="group"></project-row> 
+				</div>
 			</div>
 		</section>
 	</div>

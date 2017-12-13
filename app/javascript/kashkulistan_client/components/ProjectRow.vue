@@ -1,7 +1,7 @@
 <template>
 	<section class="hero is-small">
 		<div class="hero-body">
-			<div class="tile is-ancestor">
+			<div class="tile is-parent">
 				<project-tile v-for="projectData in rowData" :tileData="projectData"></project-tile>
 		  </div>
 		 </div>

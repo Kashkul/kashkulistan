@@ -5,7 +5,7 @@
 			<br>
 			<p class="subtitle">{{tileData.description}}</p>
 			<br>
-			<figure class="image is-4by3">
+			<figure class="image">
 				<img :src="tileData.photo.url">
 			</figure>
 		</article>

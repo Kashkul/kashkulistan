@@ -6,7 +6,7 @@
 			<p class="subtitle">{{tileData.description}}</p>
 			<br>
 			<figure class="image is-4by3">
-				<img src="https://bulma.io/images/placeholders/640x480.png">
+				<img :src="tileData.photo.url">
 			</figure>
 		</article>
 	</div>			

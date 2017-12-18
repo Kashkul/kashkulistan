@@ -3,9 +3,9 @@ class Project < ApplicationRecord
 	#photo uploader using carrierwave
 	mount_uploader :photo, ProjectPhotoUploader
 
-	#This functions in the same way as the make_rows method for people - It groups the projects into segments easily formatted by the vue app.
-	#TODO: refactor this/people method to make it DRY.
-	def self.make_rows(number)
+	#This method splits all projects into two groups
+	#grouping allows frontend Vue app to easily format into columns.
+	def self.make_columns
 		#select all projects
 		projects = self.all
 		#Make array with all projects
@@ -13,8 +13,8 @@ class Project < ApplicationRecord
 		projects.each do |project|
 			projects_array << project
 		end
-		#split projects_array into subarrays with groups, size of which designated by the argument passed as the number param
-		grouped_array = projects_array.each_slice(number).to_a
+		#Take projects array, and split into two sub arrays
+		grouped_array = projects_array.each_slice( (projects_array.size/2.0).round ).to_a
 	end
 
 end

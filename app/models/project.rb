@@ -1,5 +1,8 @@
 class Project < ApplicationRecord
 
+	#photo uploader using carrierwave
+	mount_uploader :photo, ProjectPhotoUploader
+
 	#This functions in the same way as the make_rows method for people - It groups the projects into segments easily formatted by the vue app.
 	#TODO: refactor this/people method to make it DRY.
 	def self.make_rows(number)

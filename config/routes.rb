@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'kashkulistan#index'
 
+  #API Routes, used for Axios requests from Vue app
   namespace :api, defaults: { format: :json } do
   	namespace :v1 do
     	resources :people, only: [ :index ]
@@ -8,4 +9,8 @@ Rails.application.routes.draw do
     	resources :projects, only: [ :index ]
     end
   end
+
+  #Rails app routes, used for CMS
+  resources :projects
+
 end  

@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rails_12factor', group: :production
 
 # manages access info for AWS cloud storage
-gem 'fog'
+gem 'fog-aws'
 
 # manages file uploads
 gem 'carrierwave'

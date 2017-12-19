@@ -1,11 +1,9 @@
 <template>
-	<section class="hero is-small">
-		<div class="hero-body">
-			<div class="tile is-parent">
+	<div class="tile is-ancestor is-6 is-vertical">
+			<div class="tile is-parent is-vertical">
 				<project-tile v-for="projectData in rowData" :tileData="projectData"></project-tile>
 		  </div>
-		 </div>
-  </section>        
+  </div>        
 </template>
 
 <script>

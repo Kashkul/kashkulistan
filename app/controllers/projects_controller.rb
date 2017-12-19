@@ -1,10 +1,12 @@
 class ProjectsController < ApplicationController
-
+	layout 'cmslayout'
+	
 	def index
 		@projects = Project.all
 	end
 
 	def new
+		# render layout: "cmslayout"
 		@project = Project.new
 	end
 

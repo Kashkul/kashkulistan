@@ -1,7 +1,7 @@
 <template>
 	<div class="tile is-ancestor is-6 is-vertical">
 			<div class="tile is-parent is-vertical">
-				<project-tile v-for="projectData in rowData" :tileData="projectData"></project-tile>
+				<project-tile v-for="projectData in colData" :tileData="projectData"></project-tile>
 		  </div>
   </div>        
 </template>
@@ -10,8 +10,8 @@
 	import ProjectTile from './ProjectTile.vue'
 
 	export default {
-	  name: 'ProjectRow',
-	  props: ['rowData'],
+	  name: 'ProjectColumn',
+	  props: ['colData'],
 	  components: {ProjectTile},
 	  data () {
 	    return {

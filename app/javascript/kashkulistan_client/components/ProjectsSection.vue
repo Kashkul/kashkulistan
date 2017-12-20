@@ -11,7 +11,7 @@
 		<section class="hero is-white">
 			<div class="hero-body container has-text-centered">
 				<div class="tile is-ancestor">
-					<project-row v-for="group in projectsData" :rowData="group"></project-row> 
+					<project-column v-for="group in projectsData" :colData="group"></project-column> 
 				</div>
 			</div>
 		</section>
@@ -20,11 +20,11 @@
 
 <script>
 	import axios from 'axios'
-	import ProjectRow from './ProjectRow.vue'
+	import ProjectColumn from './ProjectColumn.vue'
 
 	export default {
 	  name: 'ProjectsSection',
-	  components: {ProjectRow},
+	  components: {ProjectColumn},
 	  data () {
 	    return {
 	    	projectsData: []
@@ -34,7 +34,6 @@
 	      axios.get(`api/v1/projects`)
 	      .then(response => {
 	        this.projectsData = response.data
-	        console.log(this.projectsData)
 	      })
 	      .catch(e => {
 	        this.errors.push(e)

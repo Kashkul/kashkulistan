@@ -1,6 +1,6 @@
 <template>
 	<div class="tile is-parent">
-		<article class="tile is-child box" v-scroll-reveal="{ reset: true, rotate: { x: 90, y: 90, z: 0 }, duration: '600' }">
+		<article class="tile is-child box" v-scroll-reveal="{ reset: true, duration: '600' }">
 			<p class="title">{{tileData.name}}</p>
 			<br>
 			<p class="subtitle">{{tileData.description}}</p>

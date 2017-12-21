@@ -28,3 +28,4 @@
 	@import '../styles/app.sass'
 
 </style>
+  

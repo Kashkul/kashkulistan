@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root to: 'kashkulistan#index'
 
+  get 'admin' => 'admin#home'
+
   #API Routes, used for Axios requests from Vue app
   namespace :api, defaults: { format: :json } do
   	namespace :v1 do

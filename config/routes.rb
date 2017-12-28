@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'admin/home'
+
   root to: 'kashkulistan#index'
 
   #API Routes, used for Axios requests from Vue app

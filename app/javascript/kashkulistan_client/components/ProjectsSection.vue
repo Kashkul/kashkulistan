@@ -31,14 +31,14 @@
 	    }
 	  },
 	  created () {
-	      axios.get(`api/v1/projects`)
-	      .then(response => {
-	        this.projectsData = response.data
-	      })
-	      .catch(e => {
-	        this.errors.push(e)
-	      })
-	    }
+	  	axios.get(`api/v1/projects`)
+	  	.then(response => {
+	  		this.projectsData = response.data
+	  	})
+	  	.catch(e => {
+	  		this.errors.push(e)
+	  	})
+	  }
 	}
 </script>
 

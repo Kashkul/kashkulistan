@@ -5,7 +5,6 @@
 				<router-link to="/" class="navbar-item">Kashkul</router-link>
 			</div>
 			<div>
-				
 			</div>
 			<div class="navbar-menu">
 				<div class="navbar-start">

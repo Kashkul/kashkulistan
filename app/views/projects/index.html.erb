@@ -3,7 +3,7 @@
     <% @projects.each do |project| %>
     <div class="col-xs-12">
       <div class="text-center">
-        <h2><%= project.name %></h2>
+        <%= link_to( project.name, project_path(project) ) %>
       </div>
       <br>
     </div>

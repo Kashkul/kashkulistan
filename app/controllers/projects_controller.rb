@@ -21,6 +21,10 @@ class ProjectsController < ApplicationController
 		end
 	end
 
+	def edit
+		@project = find_project
+	end
+
 	def show
 		@project = find_project
 	end

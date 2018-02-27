@@ -22,13 +22,16 @@ class ProjectsController < ApplicationController
 	end
 
 	def show
-		@project = Project.find(params[:id])
+		@project = find_project
 	end
 
 	def update
 	end
 
 	def destroy
+    @project = find_project
+    @project.destroy
+    redirect_to projects_path
 	end
 
 	private
@@ -38,6 +41,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def find_project
+		Project.find(params[:id])
 	end
 
 end

@@ -1,41 +1,41 @@
 class ProjectsController < ApplicationController
-	before_action :authenticate_admin!
 	layout 'cmslayout'
+	before_action :authenticate_admin!, :find_project, only: [:show, :edit, :update, :destroy]
 	
 	def index
 		@projects = Project.all
 	end
 
 	def new
-		# render layout: "cmslayout"
 		@project = Project.new
 	end
 
 	def create
 		@project = Project.new(project_params)
-
 		if @project.save
-			flash[:success] = "Project saved!"
+			redirect_to @project, notice: "Project created"
 		else
 			render 'new'
 		end
 	end
 
 	def edit
-		@project = find_project
 	end
 
 	def show
-		@project = find_project
 	end
 
 	def update
+		if @project.update(project_params)
+			redirect_to @project, notice: "Project updated"
+		else
+			render 'edit'
+		end
 	end
 
 	def destroy
-    @project = find_project
     @project.destroy
-    redirect_to projects_path
+    redirect_to projects_path, notice: "Project deleted"
 	end
 
 	private
@@ -45,7 +45,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def find_project
-		Project.find(params[:id])
+		@project = Project.find(params[:id])
 	end
 
 end

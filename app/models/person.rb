@@ -1,7 +1,7 @@
 class Person < ApplicationRecord
 
 	#photo uploader using carrierwave
-	mount_uploader :photo, ProjectPhotoUploader
+	mount_uploader :photo, PersonPhotoUploader
 
 	#make_rows takes all instances of people in the database and organizes them into groups of designated size, 
 	#which allows the front-end to easily format them into rows using the tile format.

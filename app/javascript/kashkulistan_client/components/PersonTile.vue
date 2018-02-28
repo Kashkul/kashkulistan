@@ -4,6 +4,7 @@
 			<section v-scroll-reveal>
 				<div class="content">
 					<p class="title">{{tileData.name}}</p>
+					<img :src="tileData.photo.url" alt="">
 					<p class="subtitle">{{tileData.role}}</p>
 					<p>{{tileData.about}}</p>
 				</div>
@@ -18,7 +19,6 @@
 	  props: ['tileData'],
 	  data () {
 	    return {
-
 	    }
 	  }
 	}

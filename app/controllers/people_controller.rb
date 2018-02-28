@@ -12,8 +12,8 @@ class PeopleController < ApplicationController
 
 	def create
 		@person = Person.new(person_params)
-		if @project.save
-			redirect_to @project, notice: "Project created"
+		if @person.save
+			redirect_to people_path, notice: "Person created"
 		else
 			render 'new'
 		end

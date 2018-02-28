@@ -17,5 +17,6 @@ Rails.application.routes.draw do
 
   #Rails app routes, used for CMS
   resources :projects
+  resources :people
 
 end  

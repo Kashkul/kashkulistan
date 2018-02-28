@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="col-sm-10 col-sm-offset-1 col-xs-12 blog-content">
+    <% @people.each do |person| %>
+    <div class="col-xs-12">
+      <div class="text-center">
+        <%= link_to( person.name, person_path(person) ) %>
+      </div>
+      <br>
+    </div>
+    <% end %>
+  </div>
+  <%= link_to("New Person", new_person_path) %>
+</div>

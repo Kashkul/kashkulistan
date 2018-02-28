@@ -3,7 +3,7 @@ class PeopleController < ApplicationController
 	before_action :authenticate_admin!, :find_person, only: [:show, :edit, :update, :destroy]
 	
 	def index
-		@person = Person.all
+		@people = Person.all
 	end
 
 	def new

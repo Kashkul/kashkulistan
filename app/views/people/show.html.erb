@@ -1,4 +1,6 @@
+<%= link_to "Back to people", people_path %>
 <h1><%=@person.name%></h1>
+<%= image_tag(@person.photo_url.to_s) %>
 <p>Role: <%=@person.role%></p>
 <p>About: <%=@person.about%></p>
 

@@ -4,7 +4,7 @@
 			<section v-scroll-reveal>
 				<div class="content">
 					<p class="title">{{tileData.name}}</p>
-					<img :src="tileData.photo.url" alt="">
+					<img class="avatar-image" :src="tileData.photo.url" alt="">
 					<p class="subtitle">{{tileData.role}}</p>
 					<p>{{tileData.about}}</p>
 				</div>
@@ -27,7 +27,10 @@
 <style lang="sass" scoped>
 	@import '../styles/app.sass'
 
-	.social-media-icons
-		margin-bottom: 20px
+	.avatar-image
+		border-radius: 50%
+		height: 150px
+		width: 150px
+		margin-bottom: 15px
 
 </style>

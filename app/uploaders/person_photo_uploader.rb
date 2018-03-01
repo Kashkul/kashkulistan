@@ -32,13 +32,13 @@ class PersonPhotoUploader < CarrierWave::Uploader::Base
   # Create different versions of your uploaded files:
   # version :thumb do
   # end
-  process :resize_to_fill => [ 250, 250 ]
-  process :auto_orient
-  def auto_orient
-    manipulate! do |image|
-      image.tap(&:auto_orient)
-    end
-  end
+  process :resize_to_fill => [ 300, 300 ]
+  # process :auto_orient
+  # def auto_orient
+  #   manipulate! do |image|
+  #     image.tap(&:auto_orient)
+  #   end
+  # end
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   def extension_whitelist

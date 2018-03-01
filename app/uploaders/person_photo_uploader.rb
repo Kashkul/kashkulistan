@@ -32,7 +32,7 @@ class PersonPhotoUploader < CarrierWave::Uploader::Base
   # Create different versions of your uploaded files:
   # version :thumb do
   # end
-  process :resize_to_fill => [ 300, 300 ]
+  process :resize_to_fill => [ 350, 350 ]
   # process :auto_orient
   # def auto_orient
   #   manipulate! do |image|

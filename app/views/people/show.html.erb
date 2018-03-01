@@ -1,0 +1,9 @@
+<h1><%=@person.name%></h1>
+<p>Role: <%=@person.role%></p>
+<p>About: <%=@person.about%></p>
+
+<%= link_to "Edit", edit_person_path(@person) %>
+<br>
+<%= link_to "Delete", person_path(@person), 
+											method: :delete, 
+											data: { confirm: "Are you sure you want to delete this person?" } %>

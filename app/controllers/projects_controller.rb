@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
 	before_action :authenticate_admin!, :find_project, only: [:show, :edit, :update, :destroy]
 	
 	def index
-		@projects = Project.all
+		@projects = Project.order("id ASC")
 	end
 
 	def new

@@ -31,6 +31,7 @@ class ProjectPhotoUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
   # version :thumb do
+  process :resize_to_limit => [ 750, 750 ]
   process :auto_orient
   # end
   def auto_orient

@@ -1,5 +1,6 @@
 <h1><%=@project.name%></h1>
 <p>Description: <%=@project.description%></p>
+<%= image_tag(@project.photo_url.to_s) %>
 <p><%=@project.authors%></p>
 
 <%= link_to "Edit", edit_project_path(@project) %>

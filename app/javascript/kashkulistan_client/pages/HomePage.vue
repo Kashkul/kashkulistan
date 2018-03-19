@@ -7,11 +7,6 @@
 		<section class="hero is-small">
 			<instagram-carousel></instagram-carousel>
 		</section>
-		<section class="hero is-white is-fullheight">
-			<div class="hero-body">
-				
-			</div>
-		</section>
 	</div>
 </template>
 

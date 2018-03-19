@@ -14,7 +14,7 @@ class Project < ApplicationRecord
 			projects_array << project
 		end
 		#Take projects array, and split into two sub arrays
-		grouped_array = projects_array.each_slice( (projects_array.size/2.0).round ).to_a
+		grouped_array = projects_array.each_slice( (projects_array.size/3.0).round ).to_a
 	end
 
 end

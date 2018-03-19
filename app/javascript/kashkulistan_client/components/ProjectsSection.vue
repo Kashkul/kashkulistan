@@ -1,10 +1,9 @@
 <template>
 	<div>
-		<section class="hero is-large is-white">
+		<section class="hero is-medium is-white">
 			<div class="hero-body">
 				<div class="container has-text-centered" v-scroll-reveal>
 					<p class="title">Kashkul Projects:</p>
-					<p class="subtitle">Click tiles for more information</p>
 				</div>
 			</div>
 		</section>

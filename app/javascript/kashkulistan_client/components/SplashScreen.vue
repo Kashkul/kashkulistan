@@ -1,5 +1,5 @@
 <template>
-	<section class="hero is-fullheight is-dark is-bold">
+	<section class="hero is-fullheight is-black is-bold">
 		<div class="hero-body">
 			<div class="container has-text-centered">
 				<section v-scroll-reveal.reset>

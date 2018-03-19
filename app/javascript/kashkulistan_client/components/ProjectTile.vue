@@ -1,9 +1,9 @@
 <template>
 	<div class="tile is-parent">
-		<article class="tile is-child box" v-scroll-reveal="{ duration: '600' }">
-			<p class="title has-text-black">{{tileData.name}}</p>
+		<article class="tile is-child" v-scroll-reveal="{ duration: '600' }">
+			<p class="title ">{{tileData.name}}</p>
 			<br>
-			<p class="subtitle has-text-black">{{tileData.description}}</p>
+			<p class="subtitle ">{{tileData.description}}</p>
 			<br>
 			<figure class="image">
 				<img :src="tileData.photo.url">
@@ -26,6 +26,9 @@
 
 <style lang="sass" scoped>
 	@import '../styles/app.sass'
+
+	.box
+		background: $black
 
 </style>
   

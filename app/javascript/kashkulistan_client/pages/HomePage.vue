@@ -3,24 +3,10 @@
 		<parallax :fixed="true">
 			<splash-screen></splash-screen>
 		</parallax>
-		<section class="hero is-large is-white">
-			<div class="hero-body">
-				<div class="container has-text-centered">
-					<h1 class="title">
-						<strong>This is our kashkul.</strong>
-					</h1>
-				</div>
-			</div>
-		</section>
+		<projects-section></projects-section>
 		<section class="hero is-small">
 			<instagram-carousel></instagram-carousel>
 		</section>
-		<about-section></about-section>
-		<section class="hero is-large">
-			<div class="hero-body">
-			</div>
-		</section>
-		<projects-section></projects-section>
 		<section class="hero is-white is-fullheight">
 			<div class="hero-body">
 				
@@ -51,3 +37,23 @@
 	@import '../styles/app.sass'
 
 </style>
+
+
+<!-- Perhaps to be recycled:
+		<section class="hero is-large is-white">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title">
+						<strong>This is our kashkul.</strong>
+					</h1>
+				</div>
+			</div>
+		</section> 
+
+
+		<about-section></about-section>
+		<section class="hero is-large">
+			<div class="hero-body">
+			</div>
+		</section>
+		-->

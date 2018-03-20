@@ -1,8 +1,7 @@
 <template>
 	<div class="tile is-parent">
-		<article class="tile is-child box"  id="testthis" v-scroll-reveal="{ duration: '600' }">
-			<p class="title">{{tileData.name}}</p>
-			<br>
+		<article class="tile is-child"  id="project-tile" v-scroll-reveal="{ duration: '600' }">
+			<p class="title" id="project-heading">{{tileData.name}}</p>
 			<p class="subtitle">{{tileData.description}}</p>
 			<br>
 			<figure class="image">
@@ -26,6 +25,12 @@
 
 <style lang="sass" scoped>
 	@import '../styles/app.sass'
+
+	#project-tile
+		padding-bottom: 10%
+
+	#project-heading
+		padding-bottom: 3%
 
 </style>
   

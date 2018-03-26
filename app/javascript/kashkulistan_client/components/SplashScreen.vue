@@ -47,10 +47,9 @@
 	@import '../styles/app.sass'
 
 	.svg-container
-		height: 50%
-		width: 50%
+		height: 40%
+		width: 40%
 		margin: auto
-		z-index: 0
 
 	.hero-footer
 		margin-bottom: 50px
@@ -60,7 +59,10 @@
 		text-align: center
 		padding-right: 10%
 		padding-left: 10%
-		padding-top: 50%
+
+	#declaration
+		margin-top: 10%
+
 
 </style>
 

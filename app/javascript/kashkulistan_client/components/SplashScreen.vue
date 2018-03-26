@@ -4,22 +4,26 @@
 			<div class="svg-container">
 				<kashkul-logo></kashkul-logo>
 			</div>
-			<div class="container">
+			<div id="title-text">
 				<section v-scroll-reveal.reset>
-						<h1 class="title is-2">
-							Kashkul is a research, translation, and preservation collaborative based in Sulaimani, Iraq. Iraqi, Kurdish, and American scholars come together to pursue projects of their own design. All members of the collaborative hope that this is our work, in the digital world: to create, curate, and preserve culture in the northern regions of Iraq.
+						<h1 class="title is-1">
+							Kashkul:
 						</h1>
 						<h2 class="title is-3">
-							
+							1: A collection of things that fit together, despite not being designed as a set.
+						</h2>						
+						<h2 class="title is-3">
+							2: a research, translation, and preservation collaborative based in Sulaimani, Iraq. Iraqi, Kurdish, and American scholars come together to pursue projects of their own design. 
+						</h2>
+						<h2 class="title is-3" id="declaration">
+							This is our Kashkul.
 						</h2>
 				</section>
 			</div>
 		</div>
 		<div class="hero-footer">
 			<div class="container has-text-centered">
-				<h1 class="title is-3">
-					This is our Kashkul.
-				</h1>
+
 			</div>
 		</div>
 	</section>
@@ -51,4 +55,13 @@
 	.hero-footer
 		margin-bottom: 50px
 
+	#title-text
+		position: absolute
+		text-align: center
+		padding-right: 10%
+		padding-left: 10%
+		padding-top: 50%
+
 </style>
+
+<!-- All members of the collaborative hope that this is our work, in the digital world: to create, curate, and preserve culture in the northern regions of Iraq. -->

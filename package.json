@@ -2,7 +2,7 @@
   "name": "kashkulistan",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.0.2",
+    "@rails/webpacker": "^3.4.1",
     "axios": "^0.17.0",
     "bulma": "^0.6.0",
     "bulma-timeline": "^1.1.0",
@@ -11,18 +11,20 @@
     "instafeed.js": "^1.4.1",
     "jsonp": "^0.2.1",
     "node-sass": "^4.5.3",
+    "postcss-smart-import": "^0.7.6",
     "rails-ujs": "^5.1.5",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
-    "vue": "^2.5.2",
+    "vue": "^2.5.16",
     "vue-carousel": "^0.6.5",
-    "vue-loader": "^13.3.0",
+    "vue-loader": "^14.2.2",
     "vue-parallaxy": "^1.0.3",
     "vue-router": "^3.0.1",
     "vue-scroll-reveal": "^1.0.3",
-    "vue-template-compiler": "^2.5.2"
+    "vue-svg-loader": "^0.5.0",
+    "vue-template-compiler": "^2.5.16"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.9.2"
+    "webpack-dev-server": "^2.11.1"
   }
 }

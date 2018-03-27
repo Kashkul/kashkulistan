@@ -1,13 +1,13 @@
 <template>
 	<div>
-		<section class="hero is-medium is-black">
+		<section class="hero is-medium is-white">
 			<div class="hero-body">
 				<div class="container has-text-centered" v-scroll-reveal>
-					<p class="title">Kashkul Projects:</p>
+					<p class="title is-1">Kashkul Projects:</p>
 				</div>
 			</div>
 		</section>
-		<section class="hero is-black">
+		<section class="hero is-white">
 			<div class="hero-body container has-text-centered">
 				<div class="tile is-ancestor">
 					<div class="columns">

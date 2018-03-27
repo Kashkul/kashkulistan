@@ -6,31 +6,35 @@
         <p class="subtitle">Maybe say some more stuff here. Probably make this centered.</p> 
       </div>
     </section>
-    <section class="hero is-medium is-black">
-      <div class="hero-body container has-text-centered">
-        <person-row v-for="group in peopleData" :rowData="group"></person-row>
-      </div>
-    </section>   
+    <person-category v-if="firstCat" :category-data="firstCat"></person-category> 
+    <person-category v-if="secondCat" :category-data="secondCat"></person-category> 
+    <person-category v-if="thirdCat" :category-data="thirdCat"></person-category> 
   </div>
 </template>
 
 <script>
   import axios from 'axios'
-  import PersonRow from '../components/PersonRow.vue'
+  import PersonCategory from '../components/PersonCategory.vue'
 
   export default {
     name: 'PeoplePage',
-    components: {PersonRow},
+    components: { PersonCategory },
     data () {
       return {
         //peopleData will be set to the data in the server response - see created function below.
         peopleData: []
       }
     },
+    computed: {
+      firstCat: function() { return this.peopleData[0] },
+      secondCat: function() { return this.peopleData[1] },
+      thirdCat: function() { return this.peopleData[2] }
+    },
     created () {
       axios.get(`api/v1/people`)
       .then(response => {
         this.peopleData = response.data
+        // this.firstCat = this.peopleData[0]
       })
       .catch(e => {
         this.errors.push(e)

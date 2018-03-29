@@ -2,7 +2,7 @@
 	<section class="hero is-fullheight is-black is-bold">
 		<div class="hero-body">
 			<div class="svg-container">
-				<kashkul-logo></kashkul-logo>
+				<kashkul-logo v-if="loaded"></kashkul-logo>
 			</div>
 			<div id="title-text">
 				<section v-scroll-reveal.reset>
@@ -37,8 +37,13 @@
 	  components: { KashkulLogo },
 	  data () {
 	    return {
-
+	    	loaded: false
 	    }
+	  },
+	  created() {
+	  	setTimeout(() => {
+	  		this.loaded = true
+	  	}, 1)
 	  }
 	}
 </script>
@@ -59,9 +64,11 @@
 		text-align: center
 		padding-right: 10%
 		padding-left: 10%
+		display: none
 
 	#declaration
 		margin-top: 10%
+
 
 
 </style>

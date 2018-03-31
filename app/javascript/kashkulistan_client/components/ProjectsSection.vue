@@ -1,9 +1,9 @@
 <template>
 	<div>
-		<section class="hero is-medium is-white">
+		<section class="hero is-white">
 			<div class="hero-body">
 				<div class="container has-text-centered" v-scroll-reveal>
-					<p class="title is-1">Kashkul Projects:</p>
+					<p class="title is-2">Kashkul Projects:</p>
 				</div>
 			</div>
 		</section>

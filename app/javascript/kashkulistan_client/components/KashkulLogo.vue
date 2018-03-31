@@ -148,6 +148,9 @@
 	  	setTimeout(() => {
 	  		this.wedges = true
 	  	}, 3800)
+	  	setTimeout(() => {
+	  		this.$emit('animationOver')
+	  	}, 7000)
 	  }
 	}
 </script>

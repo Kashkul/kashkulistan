@@ -2,22 +2,30 @@
 	<section class="hero is-fullheight is-black is-bold">
 		<div class="hero-body">
 			<div class="svg-container">
-				<kashkul-logo v-if="loaded"></kashkul-logo>
+				<kashkul-logo v-if="pageLoaded" @animationOver="startText"></kashkul-logo>
 			</div>
 			<div id="title-text">
 				<section v-scroll-reveal.reset>
-						<h1 class="title is-1">
+					<transition name="text-entry">
+						<h1 v-if="kashkulTitle" class="title is-1">
 							Kashkul:
 						</h1>
-						<h2 class="title is-3">
+					</transition>
+					<transition name="text-entry">
+						<h2 v-if="kashkulTitle" class="title is-3">
 							1: A collection of things that fit together, despite not being designed as a set.
-						</h2>						
-						<h2 class="title is-3">
+						</h2>	
+					</transition>
+					<transition name="text-entry">					
+						<h2 v-if="kashkulTitle" class="title is-3">
 							2: a research, translation, and preservation collaborative based in Sulaimani, Iraq. Iraqi, Kurdish, and American scholars come together to pursue projects of their own design. 
 						</h2>
-						<h2 class="title is-3" id="declaration">
+					</transition>
+					<transition name="text-entry">
+						<h2 v-if="kashkulTitle" class="title is-3" id="declaration">
 							This is our Kashkul.
 						</h2>
+					</transition>
 				</section>
 			</div>
 		</div>
@@ -37,12 +45,20 @@
 	  components: { KashkulLogo },
 	  data () {
 	    return {
-	    	loaded: false
+	    	pageLoaded: false,
+	    	logoLoaded: false,
+	    	kashkulTitle: false
 	    }
 	  },
-	  created() {
+	  methods: {
+	  	startText: function() {
+	  		this.logoLoaded = true
+	  		setTimeout(() => this.kashkulTitle = true, 1000)
+	  	}
+	  },
+	  mounted() {
 	  	setTimeout(() => {
-	  		this.loaded = true
+	  		this.pageLoaded = true
 	  	}, 1)
 	  }
 	}
@@ -52,8 +68,8 @@
 	@import '../styles/app.sass'
 
 	.svg-container
-		height: 70%
-		width: 50%
+		height: 60%
+		width: 45%
 		margin: auto
 
 	.hero-footer
@@ -64,7 +80,13 @@
 		text-align: center
 		padding-right: 10%
 		padding-left: 10%
-		display: none
+
+	.text-entry-enter-active
+		transition: all 5s ease
+
+	.text-entry-enter
+		opacity: 0
+
 
 	#declaration
 		margin-top: 10%

@@ -1,18 +1,7 @@
 <template>
   <div class="carousel-container">
   	<carousel  :autoplay="true" :loop="true" :perPage="2">
-      <slide class="slide"><img src="assets/instastatic/2.png"></slide>
-      <slide class="slide"><img src="assets/instastatic/3.png"></slide>
-      <slide class="slide"><img src="assets/instastatic/4.png"></slide>
-      <slide class="slide"><img src="assets/instastatic/2.png"></slide>
-      <slide class="slide"><img src="assets/instastatic/3.png"></slide>
-      <slide class="slide"><img src="assets/instastatic/4.png"></slide>
-      <slide class="slide"><img src="assets/instastatic/2.png"></slide>
-      <slide class="slide"><img src="assets/instastatic/3.png"></slide>
-      <slide class="slide"><img src="assets/instastatic/4.png"></slide>
-  		<slide class="slide"><img src="assets/instastatic/2.png"></slide>
-  		<slide class="slide"><img src="assets/instastatic/3.png"></slide>
-  		<slide class="slide"><img src="assets/instastatic/4.png"></slide>
+      <slide class="slide" v-for="photo in photos"><img :src="photo.images.standard_resolution.url"></slide>
   	</carousel>
   </div>
 </template>
@@ -36,19 +25,17 @@
         let userId = process.env.KASHKUL_INSTAGRAM_ACCT_ID
         let instagramApiUrl= `http://api.instagram.com/v1/users/${userId}/media/recent/?access_token=${accessToken}`
 
-        jsonp(instagramApiUrl, null, function (err, data) {
+        jsonp(instagramApiUrl, null, (err, data) => {
           if (err) {
             console.log(err.message)
           } else {
-            console.log('You are in getInsta')
-            return data.data
+            data.data.forEach(photo => this.photos.push(photo))
           }
-        })
+        })     
       }     
     },
     created() {
-      this.photos = this.getInstaData()
-      console.log(this.photos)
+      this.getInstaData()
     }
   }
 </script>

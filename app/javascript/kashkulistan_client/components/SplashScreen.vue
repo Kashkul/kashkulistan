@@ -52,8 +52,8 @@
 	@import '../styles/app.sass'
 
 	.svg-container
-		height: 40%
-		width: 40%
+		height: 70%
+		width: 50%
 		margin: auto
 
 	.hero-footer

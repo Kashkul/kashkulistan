@@ -1,6 +1,6 @@
 <template>
 	<section> 
-		<nav class="navbar is-dark">
+		<nav class="navbar is-black">
 			<div class="navbar-brand">
 				<router-link to="/" class="navbar-item">Kashkul</router-link>
 			</div>

@@ -53,7 +53,7 @@
 	  methods: {
 	  	startText: function() {
 	  		this.logoLoaded = true
-	  		setTimeout(() => this.kashkulTitle = true, 1000)
+	  		setTimeout(() => this.kashkulTitle = true, 300)
 	  	}
 	  },
 	  mounted() {
@@ -82,7 +82,7 @@
 		padding-left: 10%
 
 	.text-entry-enter-active
-		transition: all 5s ease
+		transition: all 10s ease-out
 
 	.text-entry-enter
 		opacity: 0

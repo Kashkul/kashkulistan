@@ -10,10 +10,7 @@
 				<div class="navbar-start">
 					<div class="navbar-item">
 						<router-link to="People">Our people</router-link>
-					</div>
-					<div class="navbar-item">
-						<router-link to="Events">Events</router-link>
-					</div>					
+					</div>		
 				</div>
 			</div>
 		</nav>

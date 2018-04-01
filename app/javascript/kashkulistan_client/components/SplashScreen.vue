@@ -1,10 +1,10 @@
 <template>
 	<section class="hero is-fullheight is-black is-bold">
-		<div class="hero-body">
-			<div class="svg-container">
+		<div class="hero-body columns">
+			<div class="column">
 				<kashkul-logo v-if="pageLoaded" @animationOver="startText"></kashkul-logo>
 			</div>
-			<div id="title-text">
+			<div class="column">
 				<section v-scroll-reveal.reset>
 					<transition name="text-entry">
 						<h1 v-if="kashkulTitle" class="title is-1">
@@ -22,16 +22,11 @@
 						</h2>
 					</transition>
 					<transition name="text-entry">
-						<h2 v-if="kashkulTitle" class="title is-3" id="declaration">
+						<h2 v-if="kashkulTitle" class="title is-2" id="declaration">
 							This is our Kashkul.
 						</h2>
 					</transition>
 				</section>
-			</div>
-		</div>
-		<div class="hero-footer">
-			<div class="container has-text-centered">
-
 			</div>
 		</div>
 	</section>
@@ -67,31 +62,14 @@
 <style lang="sass" scoped>
 	@import '../styles/app.sass'
 
-	.svg-container
-		height: 60%
-		width: 45%
-		margin: auto
-
-	.hero-footer
-		margin-bottom: 50px
-
-	#title-text
-		position: absolute
-		text-align: center
-		padding-right: 10%
-		padding-left: 10%
-
 	.text-entry-enter-active
-		transition: all 10s ease-out
+		transition: all 10s ease
 
 	.text-entry-enter
 		opacity: 0
 
-
 	#declaration
 		margin-top: 10%
-
-
 
 </style>
 

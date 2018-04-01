@@ -4,8 +4,12 @@
 			<splash-screen></splash-screen>
 		</parallax>
 		<projects-section></projects-section>
-		<section class="hero is-small">
+		<section class="hero is-medium is-black is-bold">
+			<div class="hero-body container has-text-centered">
+			<h1 class="title is-1 has-text-white">Follow us on Instagram:</h1>
+			<h1 class="title is-3 has-text-white">@kash_kul</h1>
 			<instagram-carousel></instagram-carousel>
+			</div>
 		</section>
 	</div>
 </template>

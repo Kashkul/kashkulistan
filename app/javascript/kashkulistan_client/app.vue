@@ -43,7 +43,6 @@ export default {
     position: fixed
     width: 100%
 
-  #main-content
-    padding-bottom: 100px
+
     
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<svg xmlns="http://www.w3.org/2000/svg" height="80vh" width="50vw" viewBox="0 0 768 1024">
+	<svg xmlns="http://www.w3.org/2000/svg" height="95vh" width="50vw" viewBox="0 0 768 1024">
 
 			<transition name="stroke-fade">
 				<path v-if="centerStrokes" d="M451.8,831.9c0.4-1,0.7-2,1.1-2.9c0.6-1.4,1.7-2.7,2-4.2c2.2-9.7,4.3-19.4,6.3-29.1c3.8-18.7,7.2-37.6,11.5-56.2

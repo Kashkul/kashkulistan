@@ -5,28 +5,26 @@
 				<kashkul-logo v-if="pageLoaded" @animationOver="startText"></kashkul-logo>
 			</div>
 			<div class="column">
-				<section v-scroll-reveal.reset>
-					<transition name="text-entry">
-						<h1 v-if="kashkulTitle" class="title is-1">
-							Kashkul:
-						</h1>
-					</transition>
-					<transition name="text-entry">
-						<h2 v-if="kashkulTitle" class="title is-3">
-							1: A collection of things that fit together, despite not being designed as a set.
-						</h2>	
-					</transition>
-					<transition name="text-entry">					
-						<h2 v-if="kashkulTitle" class="title is-3">
-							2: a research, translation, and preservation collaborative based in Sulaimani, Iraq. Iraqi, Kurdish, and American scholars come together to pursue projects of their own design. 
-						</h2>
-					</transition>
-					<transition name="text-entry">
-						<h2 v-if="kashkulTitle" class="title is-2" id="declaration">
-							This is our Kashkul.
-						</h2>
-					</transition>
-				</section>
+				<transition name="text-entry">
+					<h1 v-if="kashkulTitle" class="title is-1">
+						Kashkul:
+					</h1>
+				</transition>
+				<transition name="text-entry">
+					<h2 v-if="kashkulTitle" class="title is-3">
+						1: A collection of things that fit together, despite not being designed as a set.
+					</h2>	
+				</transition>
+				<transition name="text-entry">					
+					<h2 v-if="kashkulTitle" class="title is-3">
+						2: a research, translation, and preservation collaborative based in Sulaimani, Iraq. Iraqi, Kurdish, and American scholars come together to pursue projects of their own design. 
+					</h2>
+				</transition>
+				<transition name="text-entry">
+					<h2 v-if="kashkulTitle" class="title is-2 has-text-link" id="declaration">
+						This is our Kashkul.
+					</h2>
+				</transition>
 			</div>
 		</div>
 	</section>

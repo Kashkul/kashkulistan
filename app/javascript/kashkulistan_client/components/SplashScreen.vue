@@ -1,27 +1,27 @@
 <template>
-	<section class="hero is-fullheight is-black is-bold">
-		<div class="hero-body columns">
+	<section class="hero is-fullheight splash-img">
+		<div class="hero-body columns not-opaque">
 			<div class="column">
 				<kashkul-logo v-if="pageLoaded" @animationOver="startText"></kashkul-logo>
 			</div>
-			<div class="column">
+			<div class="column title-text">
 				<transition name="text-entry">
-					<h1 v-if="kashkulTitle" class="title is-1">
+					<h1 v-if="kashkulTitle" class="title is-1 has-text-black">
 						Kashkul:
 					</h1>
 				</transition>
 				<transition name="text-entry">
-					<h2 v-if="kashkulTitle" class="title is-3">
+					<h2 v-if="kashkulTitle" class="title is-3 has-text-black">
 						1: A collection of things that fit together, despite not being designed as a set.
 					</h2>	
 				</transition>
 				<transition name="text-entry">					
-					<h2 v-if="kashkulTitle" class="title is-3">
+					<h2 v-if="kashkulTitle" class="title is-3 has-text-black">
 						2: a research, translation, and preservation collaborative based in Sulaimani, Iraq. Iraqi, Kurdish, and American scholars come together to pursue projects of their own design. 
 					</h2>
 				</transition>
 				<transition name="text-entry">
-					<h2 v-if="kashkulTitle" class="title is-2 has-text-link" id="declaration">
+					<h2 v-if="kashkulTitle" class="title is-2 has-text-black" id="declaration">
 						This is our Kashkul.
 					</h2>
 				</transition>
@@ -68,6 +68,29 @@
 
 	#declaration
 		margin-top: 10%
+
+	.splash-img
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			z-index: -1
+			width: 100%
+			height: 100%
+			background: url('../images/cover.JPG')
+			background-size: cover
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			opacity: 1.0
+
+	.hero
+		background: rgba(238, 232, 223, 0.55)
+		width: 100%
+		height: 100%
+		position: absolute
+		display: block
 
 </style>
 

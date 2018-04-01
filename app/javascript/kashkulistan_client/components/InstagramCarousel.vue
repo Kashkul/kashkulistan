@@ -1,7 +1,7 @@
 <template>
   <div class="carousel-container">
   	<carousel  :autoplay="true" :loop="true" :perPage="2">
-      <slide class="slide" v-for="photo in photos"><img :src="photo.images.standard_resolution.url"></slide>
+      <slide class="slide" v-for="photo in photos"><a :href="photo.link" target="_blank"><img :src="photo.images.standard_resolution.url"></a></slide>
   	</carousel>
   </div>
 </template>
@@ -30,6 +30,7 @@
             console.log(err.message)
           } else {
             data.data.forEach(photo => this.photos.push(photo))
+            console.log(this.photos)
           }
         })     
       }     

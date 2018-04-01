@@ -150,7 +150,7 @@
 	  	}, 3800)
 	  	setTimeout(() => {
 	  		this.$emit('animationOver')
-	  	}, 7000)
+	  	}, 5600)
 	  }
 	}
 </script>

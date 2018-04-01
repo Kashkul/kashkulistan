@@ -21,6 +21,7 @@
     "vue-parallaxy": "^1.0.3",
     "vue-router": "^3.0.1",
     "vue-scroll-reveal": "^1.0.3",
+    "vue-scrollto": "^2.11.0",
     "vue-svg-loader": "^0.5.0",
     "vue-template-compiler": "^2.5.16"
   },

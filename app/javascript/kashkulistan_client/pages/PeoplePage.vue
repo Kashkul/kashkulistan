@@ -1,14 +1,16 @@
 <template>
   <div>
     <section class="hero is-large is-black is-bold">
-      <div class="hero-body container has-text-centered">
-        <p class="title">Who is Kashkul?</p>
-        <p class="subtitle">Maybe say some more stuff here. Probably make this centered.</p> 
+      <div class="hero-body container has-text-centered has-text-white">
+        <p class="title is-1">Who is Kashkul?</p>
       </div>
+      <div class="hero-foot container has-text-centered has-text-white">
+        <p class="title is-3 has-text-white"><a href="#" v-scroll-to="'#researchers'">Researchers</a>  | <a href="#" v-scroll-to="'#visiting'">Visiting Artists and Scholars</a>  |  <a href="#" v-scroll-to="'#directors'">Directors</a></p>
+      </div> 
     </section>
-    <person-category v-if="firstCat" category-name="Researchers" :category-data="firstCat"></person-category> 
-    <person-category v-if="secondCat" category-name="Visiting Scholars and Artists" :category-data="secondCat"></person-category> 
-    <person-category v-if="thirdCat" category-name="Directors" :category-data="thirdCat"></person-category> 
+    <person-category v-if="firstCat" category-name="Researchers" id="researchers" :category-data="firstCat"></person-category> 
+    <person-category v-if="secondCat" category-name="Visiting Scholars and Artists" id="visiting" :category-data="secondCat"></person-category> 
+    <person-category v-if="thirdCat" category-name="Directors" id="directors" :category-data="thirdCat"></person-category> 
   </div>
 </template>
 

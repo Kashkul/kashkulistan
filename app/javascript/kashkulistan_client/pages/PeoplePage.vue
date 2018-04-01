@@ -6,9 +6,9 @@
         <p class="subtitle">Maybe say some more stuff here. Probably make this centered.</p> 
       </div>
     </section>
-    <person-category v-if="firstCat" :category-data="firstCat"></person-category> 
-    <person-category v-if="secondCat" :category-data="secondCat"></person-category> 
-    <person-category v-if="thirdCat" :category-data="thirdCat"></person-category> 
+    <person-category v-if="firstCat" category-name="Researchers" :category-data="firstCat"></person-category> 
+    <person-category v-if="secondCat" category-name="Visiting Scholars and Artists" :category-data="secondCat"></person-category> 
+    <person-category v-if="thirdCat" category-name="Directors" :category-data="thirdCat"></person-category> 
   </div>
 </template>
 

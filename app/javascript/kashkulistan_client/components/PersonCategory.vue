@@ -1,6 +1,7 @@
 <template>
 	<section class="hero is-white">
 			<div class="hero-body container has-text-centered">
+				<h1 class="title is-1 section-heading">{{this.categoryName}}</h1>
 				<div class="tile is-ancestor">
 					<div class="columns">
 						<div class="column" v-for="group in personColumns">
@@ -18,7 +19,7 @@
 	export default {
 	  name: 'PersonCategory',
 	  components: { PersonTile },
-	  props: ['categoryData'],
+	  props: ['categoryData', 'categoryName'],
 	  data () {
 	    return {
 	    }
@@ -45,5 +46,8 @@
 
 <style lang="sass" scoped>
 	@import '../styles/app.sass'
+
+	.section-heading
+		padding: 5%
 
 </style>

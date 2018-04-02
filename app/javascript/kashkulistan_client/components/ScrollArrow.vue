@@ -23,7 +23,8 @@ export default {
 a { 
 	color: white; 
 	text-decoration: none; 
-  margin-right: 10%;
+  margin-right: 7%;
+  margin-left: 7%;
 	}
 
 .arrow {

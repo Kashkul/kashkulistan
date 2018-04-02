@@ -1,7 +1,7 @@
 <template>
 	<section class="splash-img">
 		<div class="columns not-opaque">
-			<div class="column">
+			<div class="column logo-container">
 				<kashkul-logo v-if="pageLoaded" @animationOver="startText"></kashkul-logo>
 			</div>
 			<div class="column title-text">
@@ -27,7 +27,7 @@
 				</transition>
 			</div>
 		</div>
-			<scroll-arrow></scroll-arrow>
+		<scroll-arrow v-if="arrows"></scroll-arrow>
 	</section>
 </template>
 
@@ -42,14 +42,25 @@
 	    return {
 	    	pageLoaded: false,
 	    	logoLoaded: false,
-	    	kashkulTitle: false
+	    	kashkulTitle: false,
+	    	arrows: false
 	    }
 	  },
 	  methods: {
 	  	startText: function() {
 	  		this.logoLoaded = true
 	  		setTimeout(() => this.kashkulTitle = true, 300)
+	  		setTimeout(() => this.arrows = true, 5000)
+	  	},
+	  	stopArrowsOnScroll: function() {
+	  		return this.arrows = false
 	  	}
+	  },
+	  created() {
+	  	document.addEventListener('scroll', this.stopArrowsOnScroll)
+	  },
+	  destroyed() {
+	  	document.body.removeEventListener('scroll', this.stopArrowsOnScroll)
 	  },
 	  mounted() {
 	  	setTimeout(() => {
@@ -74,8 +85,15 @@
 		margin-bottom: auto
 		padding-right: 5%
 
+	.logo-container
+		padding-top: 20px
+
 	#declaration
 		margin-top: 10%
+
+	.arrows
+		display: block
+		position:
 
 	.splash-img
 		background: rgba(0, 0, 0, 0.45)
@@ -97,11 +115,6 @@
 			bottom: 0
 			right: 0
 			opacity: 1.0
-
-	.hero
-
-
-
 
 </style>
 <!-- 	.bounce

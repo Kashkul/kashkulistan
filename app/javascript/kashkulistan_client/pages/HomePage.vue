@@ -4,13 +4,7 @@
 			<splash-screen></splash-screen>
 		</parallax>
 		<projects-section></projects-section>
-		<section class="hero is-medium is-black is-bold has-squiggles">
-			<div class="hero-body container has-text-centered">
-			<h1 class="title is-1 has-text-white">Follow us on Instagram:</h1>
-			<h1 class="title is-3 has-text-white">@kash_kul</h1>
-			<instagram-carousel></instagram-carousel>
-			</div>
-		</section>
+		<instagram-carousel></instagram-carousel>
 	</div>
 </template>
 
@@ -34,9 +28,6 @@
 
 <style lang="sass" scoped>
 	@import '../styles/app.sass'
-
-	.has-squiggles
-		background: url('../images/squiggles.jpg')
 
 </style>
 

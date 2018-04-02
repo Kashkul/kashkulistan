@@ -61,7 +61,7 @@
 	@import '../styles/app.sass'
 
 	.text-entry-enter-active
-		transition: all 10s ease
+		transition: all 5s ease
 
 	.text-entry-enter
 		opacity: 0
@@ -86,7 +86,7 @@
 			opacity: 1.0
 
 	.hero
-		background: rgba(0, 0, 0, 0.4)
+		background: rgba(0, 0, 0, 0.45)
 		width: 100%
 		height: 100%
 		position: absolute

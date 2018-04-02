@@ -1,9 +1,15 @@
 <template>
-  <div class="carousel-container">
-  	<carousel  :autoplay="true" :loop="true" :perPage="2">
-      <slide class="slide" v-for="photo in photos"><a :href="photo.link" target="_blank"><img :src="photo.images.standard_resolution.url"></a></slide>
-  	</carousel>
-  </div>
+  <section class="hero is-medium has-squiggles">
+    <div class="hero-body container has-text-centered">
+      <h1 class="title is-1 has-text-white">Follow us on Instagram</h1>
+      <h1 class="title is-3 has-text-white">@kash_kul</h1>
+    </div>
+    <div class="carousel-container">
+    	<carousel  :autoplay="true" :loop="true" :perPage="2">
+        <slide class="slide" v-for="photo in photos"><a :href="photo.link" target="_blank"><img :src="photo.images.standard_resolution.url"></a></slide>
+    	</carousel>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -45,6 +51,13 @@
   @import '../styles/app.sass'
 
   .carousel-container
-    padding: 8%
+    text-align: center
+    padding: 3%
+
+  .hero
+    background: rgba(0, 0, 0, 0.5)
+
+  .has-squiggles
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/squiggles.jpg')
 
 </style>

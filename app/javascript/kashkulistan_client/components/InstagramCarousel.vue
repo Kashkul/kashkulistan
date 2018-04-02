@@ -6,7 +6,7 @@
     </div>
     <div class="carousel-container">
     	<carousel  :autoplay="true" :loop="true" :perPage="2">
-        <slide class="slide" v-for="photo in photos"><a :href="photo.link" target="_blank"><img :src="photo.images.standard_resolution.url"></a></slide>
+        <slide class="slide" v-for="photo in photos"><a :href="photo.link" target="_blank"><img v-lazy="photo.images.standard_resolution.url"></a></slide>
     	</carousel>
     </div>
   </section>

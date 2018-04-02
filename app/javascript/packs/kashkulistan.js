@@ -8,10 +8,12 @@ import App from '../kashkulistan_client/app.vue'
 import router from '../kashkulistan_client/router/index.js'
 import VueScrollReveal from 'vue-scroll-reveal'
 import VueScrollTo from 'vue-scrollto'
+import VueLazyload from 'vue-lazyload'
  
 Vue.use(VueRouter)
 Vue.use(VueScrollReveal)
 Vue.use(VueScrollTo)
+Vue.use(VueLazyload)
 
 import 'font-awesome/css/font-awesome.css'
 

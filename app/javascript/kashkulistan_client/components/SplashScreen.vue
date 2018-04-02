@@ -7,17 +7,22 @@
 			<div class="column title-text">
 				<transition name="text-entry">
 					<h1 v-if="kashkulTitle" class="title is-1 has-text-white">
-						Kashkul:
+						Kashkul
 					</h1>
 				</transition>
 				<transition name="text-entry">
 					<h2 v-if="kashkulTitle" class="title is-3 has-text-white">
-						1: A collection of things that fit together, despite not being designed as a set.
+						1. a Sufi's begging bowl.
 					</h2>	
 				</transition>
 				<transition name="text-entry">					
 					<h2 v-if="kashkulTitle" class="title is-3 has-text-white">
-						2: a research, translation, and preservation collaborative based in Sulaimani, Iraq. Iraqi, Kurdish, and American scholars come together to pursue projects of their own design. 
+						2. a commonplace book.
+					</h2>
+				</transition>				
+				<transition name="text-entry">					
+					<h2 v-if="kashkulTitle" class="title is-3 has-text-white">
+						3. a research and arts collaborative in Sulaimani where Iraqi, Kurdish, and American scholars come together to pursue projects of their own design—to study, create, and preserve culture in Iraq.
 					</h2>
 				</transition>
 				<transition name="text-entry">
@@ -96,57 +101,9 @@
 		position:
 
 	.splash-img
-		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../images/cover.JPG')
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../images/cover.jpg')
 		width: 100%
 		height: 100%
 		background-size: cover
 	
 </style>
-<!-- 	.bounce
-		position:fixed
-		left: 50%
-		bottom: 0
-		margin-top: -25px
-		margin-left: -25px
-		height: 50px
-		width: 50px
-		background: red
-		-webkit-animation: bounce 1s infinite
-		-moz-animation: bounce 1s infinite
-		-o-animation: bounce 1s infinite
-		animation: bounce 1s infinite
-  
-	@-webkit-keyframes bounce 
-		0%       
-			bottom: 0px
-		50%      
-			bottom: 15px
-		100% 
-			bottom: 30
-  
-  
-	@-moz-keyframes bounce 
-		0%       
-			bottom: 0px
-		50%      
-			bottom: 15px
-		100%     
-			bottom: 30
-  
-	@-o-keyframes bounce 
-		0%      
-			bottom: 0px
-		50%      
-			bottom: 15px
-		100%     
-			bottom: 30
-  
-	@keyframes bounce
-		0%       
-			bottom: 0px
-		50%      
-			bottom: 15px
-		100%     
-			bottom: 30
- -->
-<!-- All members of the collaborative hope that this is our work, in the digital world: to create, curate, and preserve culture in the northern regions of Iraq. -->

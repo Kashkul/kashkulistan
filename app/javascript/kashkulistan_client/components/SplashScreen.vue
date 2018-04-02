@@ -1,6 +1,6 @@
 <template>
-	<section class="hero is-fullheight splash-img">
-		<div class="hero-body columns not-opaque">
+	<section class="splash-img">
+		<div class="columns not-opaque">
 			<div class="column">
 				<kashkul-logo v-if="pageLoaded" @animationOver="startText"></kashkul-logo>
 			</div>
@@ -27,15 +27,17 @@
 				</transition>
 			</div>
 		</div>
+			<scroll-arrow></scroll-arrow>
 	</section>
 </template>
 
 <script>
 	import KashkulLogo from './KashkulLogo.vue'
+	import ScrollArrow from './ScrollArrow.vue'
 
 	export default {
 	  name: 'SplashScreen',
-	  components: { KashkulLogo },
+	  components: { KashkulLogo, ScrollArrow },
 	  data () {
 	    return {
 	    	pageLoaded: false,
@@ -66,10 +68,21 @@
 	.text-entry-enter
 		opacity: 0
 
+	.title-text
+		position: relative
+		margin-top: auto
+		margin-bottom: auto
+		padding-right: 5%
+
 	#declaration
 		margin-top: 10%
 
 	.splash-img
+		background: rgba(0, 0, 0, 0.45)
+		width: 100%
+		height: 100%
+		position: absolute
+		display: block
 		&:after
 			content: ""
 			display: block
@@ -86,12 +99,56 @@
 			opacity: 1.0
 
 	.hero
-		background: rgba(0, 0, 0, 0.45)
-		width: 100%
-		height: 100%
-		position: absolute
-		display: block
+
+
+
 
 </style>
-
+<!-- 	.bounce
+		position:fixed
+		left: 50%
+		bottom: 0
+		margin-top: -25px
+		margin-left: -25px
+		height: 50px
+		width: 50px
+		background: red
+		-webkit-animation: bounce 1s infinite
+		-moz-animation: bounce 1s infinite
+		-o-animation: bounce 1s infinite
+		animation: bounce 1s infinite
+  
+	@-webkit-keyframes bounce 
+		0%       
+			bottom: 0px
+		50%      
+			bottom: 15px
+		100% 
+			bottom: 30
+  
+  
+	@-moz-keyframes bounce 
+		0%       
+			bottom: 0px
+		50%      
+			bottom: 15px
+		100%     
+			bottom: 30
+  
+	@-o-keyframes bounce 
+		0%      
+			bottom: 0px
+		50%      
+			bottom: 15px
+		100%     
+			bottom: 30
+  
+	@keyframes bounce
+		0%       
+			bottom: 0px
+		50%      
+			bottom: 15px
+		100%     
+			bottom: 30
+ -->
 <!-- All members of the collaborative hope that this is our work, in the digital world: to create, curate, and preserve culture in the northern regions of Iraq. -->

@@ -6,22 +6,22 @@
 			</div>
 			<div class="column title-text">
 				<transition name="text-entry">
-					<h1 v-if="kashkulTitle" class="title is-1 has-text-black">
+					<h1 v-if="kashkulTitle" class="title is-1 has-text-white">
 						Kashkul:
 					</h1>
 				</transition>
 				<transition name="text-entry">
-					<h2 v-if="kashkulTitle" class="title is-3 has-text-black">
+					<h2 v-if="kashkulTitle" class="title is-3 has-text-white">
 						1: A collection of things that fit together, despite not being designed as a set.
 					</h2>	
 				</transition>
 				<transition name="text-entry">					
-					<h2 v-if="kashkulTitle" class="title is-3 has-text-black">
+					<h2 v-if="kashkulTitle" class="title is-3 has-text-white">
 						2: a research, translation, and preservation collaborative based in Sulaimani, Iraq. Iraqi, Kurdish, and American scholars come together to pursue projects of their own design. 
 					</h2>
 				</transition>
 				<transition name="text-entry">
-					<h2 v-if="kashkulTitle" class="title is-2 has-text-black" id="declaration">
+					<h2 v-if="kashkulTitle" class="title is-2 has-text-link" id="declaration">
 						This is our Kashkul.
 					</h2>
 				</transition>
@@ -86,7 +86,7 @@
 			opacity: 1.0
 
 	.hero
-		background: rgba(238, 232, 223, 0.55)
+		background: rgba(0, 0, 0, 0.4)
 		width: 100%
 		height: 100%
 		position: absolute

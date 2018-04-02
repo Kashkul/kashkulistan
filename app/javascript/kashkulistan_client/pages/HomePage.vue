@@ -3,7 +3,7 @@
 		<parallax :fixed="true">
 			<splash-screen></splash-screen>
 		</parallax>
-		<projects-section></projects-section>
+		<projects-page></projects-page>
 		<instagram-carousel></instagram-carousel>
 	</div>
 </template>
@@ -13,11 +13,11 @@
 	import SplashScreen from '../components/SplashScreen.vue'
 	import AboutSection from '../components/AboutSection.vue'
 	import InstagramCarousel from '../components/InstagramCarousel.vue'
-	import ProjectsSection from '../components/ProjectsSection.vue'
+	import ProjectsPage from '../pages/ProjectsPage.vue'
 
 	export default {
 	  name: 'HomePage',
-	  components: {Parallax, SplashScreen, AboutSection, InstagramCarousel, ProjectsSection},
+	  components: {Parallax, SplashScreen, AboutSection, InstagramCarousel, ProjectsPage},
 	  data () {
 	    return {
 

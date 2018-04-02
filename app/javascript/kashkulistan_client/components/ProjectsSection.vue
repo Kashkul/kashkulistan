@@ -1,27 +1,18 @@
 <template>
-	<div>
-		<section class="hero is-white">
-			<div class="hero-body">
-				<div class="container has-text-centered" v-scroll-reveal>
-					<p class="title is-2">Kashkul Projects:</p>
-				</div>
-			</div>
-		</section>
-		<section class="hero is-white">
-			<div class="hero-body container has-text-centered">
-				<div class="tile is-ancestor">
-					<div class="columns is-desktop">
-						<div class="column">
-							<project-tile v-for="projectData in projectsData[0]" :tileData="projectData"></project-tile>
-						</div>						
-						<div class="column">
-							<project-tile v-for="projectData in projectsData[1]" :tileData="projectData"></project-tile>
-						</div>
+	<section class="hero is-white">
+		<div class="hero-body container has-text-centered">
+			<div class="tile is-ancestor">
+				<div class="columns is-desktop">
+					<div class="column">
+						<project-tile v-for="projectData in projectsData[0]" :tileData="projectData"></project-tile>
+					</div>						
+					<div class="column">
+						<project-tile v-for="projectData in projectsData[1]" :tileData="projectData"></project-tile>
 					</div>
 				</div>
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 </template>
 
 <script>

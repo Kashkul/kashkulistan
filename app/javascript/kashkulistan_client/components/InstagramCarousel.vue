@@ -36,7 +36,6 @@
             console.log(err.message)
           } else {
             data.data.forEach(photo => this.photos.push(photo))
-            console.log(this.photos)
           }
         })     
       }     

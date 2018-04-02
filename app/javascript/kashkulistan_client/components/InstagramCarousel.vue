@@ -59,5 +59,6 @@
 
   .has-squiggles
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/squiggles.jpg')
+    background-size: cover
 
 </style>

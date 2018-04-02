@@ -96,7 +96,7 @@
 		position:
 
 	.splash-img
-		background: rgba(0, 0, 0, 0.45)
+		background: rgba(0, 0, 0, 0.6)
 		width: 100%
 		height: 100%
 		position: absolute

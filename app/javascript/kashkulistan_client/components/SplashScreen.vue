@@ -96,26 +96,11 @@
 		position:
 
 	.splash-img
-		background: rgba(0, 0, 0, 0.6)
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../images/cover.JPG')
 		width: 100%
 		height: 100%
-		position: absolute
-		display: block
-		&:after
-			content: ""
-			display: block
-			position: absolute
-			z-index: -1
-			width: 100%
-			height: 100%
-			background: url('../images/cover.JPG')
-			background-size: cover
-			top: 0
-			left: 0
-			bottom: 0
-			right: 0
-			opacity: 1.0
-
+		background-size: cover
+	
 </style>
 <!-- 	.bounce
 		position:fixed

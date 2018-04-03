@@ -14,6 +14,9 @@
 					</div>		
 				</div>
 				<div class="navbar-end">
+					<div class="navbar-item">
+						<a href="http://www.instagram.com/kash_kul" target="_blank" class="fa fa-instagram fa-2x"></a>
+					</div>
 				</div>
 			</div>
 		</nav>

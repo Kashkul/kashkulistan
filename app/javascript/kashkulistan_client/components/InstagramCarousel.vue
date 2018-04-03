@@ -54,7 +54,7 @@
     padding: 3%
 
   .has-squiggles
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/squiggles.jpg')
+    background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url('../images/squiggles.jpg')
     background-size: cover
 
 </style>

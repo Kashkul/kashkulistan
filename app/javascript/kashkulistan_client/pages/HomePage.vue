@@ -1,8 +1,13 @@
 <template>
 	<div>
-		<parallax :fixed="true">
+		<parallax>
 			<splash-screen></splash-screen>
 		</parallax>
+<!-- 		<div class="hero is-small is-white">
+			<div class="hero-body container has-text-centered">
+				<h1 class="title is-1">Kashkul Projects</h1>
+			</div>
+		</div> -->
 		<projects-page></projects-page>
 		<instagram-carousel></instagram-carousel>
 	</div>
@@ -30,23 +35,3 @@
 	@import '../styles/app.sass'
 
 </style>
-
-
-<!-- Perhaps to be recycled:
-		<section class="hero is-large is-white">
-			<div class="hero-body">
-				<div class="container has-text-centered">
-					<h1 class="title">
-						<strong>This is our kashkul.</strong>
-					</h1>
-				</div>
-			</div>
-		</section> 
-
-
-		<about-section></about-section>
-		<section class="hero is-large">
-			<div class="hero-body">
-			</div>
-		</section>
-		-->

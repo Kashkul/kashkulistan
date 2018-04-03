@@ -1,8 +1,8 @@
 <template>
   <div>
-    <section class="hero is-large is-black is-bold">
+    <section class="hero is-large has-map">
       <div class="hero-body container has-text-centered has-text-white">
-        <p class="title is-1">Who is Kashkul?</p>
+        <p class="title is-1 has-text-white">Who is Kashkul?</p>
         <p class="title is-3 has-text-white"><a href="#" v-scroll-to="'#researchers'">Researchers</a>  | <a href="#" v-scroll-to="'#visiting'">Visiting Artists and Scholars</a>  |  <a href="#" v-scroll-to="'#directors'">Directors</a></p>
       </div>
       <div class="hero-foot container has-text-centered has-text-white">
@@ -47,5 +47,10 @@
 
 <style lang="sass" scoped>
   @import '../styles/app.sass'
+
+  .has-map
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/map.jpg')
+    background-size: cover
+    background-position: center
 
 </style>

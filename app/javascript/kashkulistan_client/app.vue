@@ -40,7 +40,5 @@ export default {
     z-index: 100
     position: fixed
     width: 100%
-
-
     
 </style>

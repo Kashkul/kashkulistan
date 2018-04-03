@@ -157,8 +157,7 @@
 <style lang="sass" scoped>
 	@import '../styles/app.sass'
 
-	svg
-		fill: $link
+
 
 
 	.stroke-fade-enter-active

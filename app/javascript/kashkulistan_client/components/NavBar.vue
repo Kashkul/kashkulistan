@@ -3,8 +3,13 @@
 		<nav class="navbar is-black">
 			<div class="navbar-brand">
 					<router-link to="/" class="navbar-item" ><img id="circle-logo" src="../images/Kashkul-circlelogo.jpg" alt=""></router-link>
+					<div class="navbar-burger burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+			      <span></span>
+			      <span></span>
+			      <span></span>
+			    </div>
 			</div>
-			<div class="navbar-menu">
+			<div class="navbar-menu" :class="{ 'is-active': showNav }" >
 				<div class="navbar-start">
 					<div class="navbar-item">
 						<router-link to="People">People</router-link>
@@ -29,7 +34,7 @@
 	  name: 'NavBar',
 	  data () {
 	    return {
-
+	    	showNav: false
 	    }
 	  }
 	}

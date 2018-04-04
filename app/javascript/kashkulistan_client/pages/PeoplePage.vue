@@ -9,7 +9,7 @@
       </div> 
     </section>
     <person-category v-if="firstCat" category-name="Researchers" id="researchers" :category-data="firstCat"></person-category> 
-    <person-category v-if="secondCat" category-name="Visiting Scholars and Artists" id="visiting" :category-data="secondCat"></person-category> 
+    <person-category v-if="secondCat" category-name="Visiting Artists and Scholars" id="visiting" :category-data="secondCat"></person-category> 
     <person-category v-if="thirdCat" category-name="Directors" id="directors" :category-data="thirdCat"></person-category> 
   </div>
 </template>

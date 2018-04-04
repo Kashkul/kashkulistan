@@ -6,7 +6,7 @@
 					<p class="title">{{tileData.name}}</p>
 					<img class="avatar-image" :src="tileData.photo.url" alt="">
 					<p class="subtitle">{{tileData.role}}</p>
-					<p>{{tileData.about}}</p>
+					<p class="subtitle">{{tileData.about}}</p>
 				</div>
 			</section>
 		</article>

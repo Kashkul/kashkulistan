@@ -101,7 +101,7 @@
 		position:
 
 	.splash-img
-		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../images/splash-cover.jpg')
+		background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('../images/splash-cover.jpg')
 		width: 100%
 		height: 100%
 		background-size: cover

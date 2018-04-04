@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-medium has-squiggles">
+  <section class="hero is-small has-squiggles">
     <div class="hero-body container has-text-centered">
       <h1 class="title is-1 has-text-white">Follow us on Instagram</h1>
       <h1 class="title is-3 has-text-white">@kash_kul</h1>
@@ -52,6 +52,9 @@
   .carousel-container
     text-align: center
     padding: 3%
+
+  .title.is-1
+    padding-top: 5%
 
   .has-squiggles
     background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url('../images/squiggles.jpg')
